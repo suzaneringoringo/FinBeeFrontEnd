@@ -10,4 +10,5 @@
     <string name="start">Start</string>
     <string name="facebook_login">Login with Facebook</string>
     <string name="sign_up">Sign me up!</string>
+    <string name="sign_up_1_navigation"><![CDATA[<b>Info Kontak</b> >> Scan KTP >> Scan Foto >> Scan Kartu Kredit >> Scan Kartu BPJS >> Info Lanjutan >>]]></string>
 </resources>

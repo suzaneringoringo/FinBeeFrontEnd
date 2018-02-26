@@ -6,7 +6,7 @@
     android:orientation="vertical"
     >
     <android.support.v4.view.ViewPager
-        android:id="@+id/welcome_viewpager"
+        android:id="@+id/sign_up_viewpager"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         />

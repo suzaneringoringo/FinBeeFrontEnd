@@ -10,7 +10,7 @@ import android.view.View;
 import java.util.List;
 import java.util.Vector;
 
-public class WelcomeActivity extends FragmentActivity {
+public class SignUpActivity extends FragmentActivity {
     /** maintains the pager adapter*/
     private MyPagerAdapter mPagerAdapter;
     /* (non-Javadoc)
@@ -19,7 +19,7 @@ public class WelcomeActivity extends FragmentActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        super.setContentView(R.layout.activity_welcome);
+        super.setContentView(R.layout.activity_sign_up);
         //initialsie the pager
         this.initialisePaging();
     }
@@ -30,15 +30,10 @@ public class WelcomeActivity extends FragmentActivity {
     private void initialisePaging() {
 
         List<Fragment> fragments = new Vector<Fragment>();
-        fragments.add(Fragment.instantiate(this, Welcome1.class.getName()));
-        fragments.add(Fragment.instantiate(this, Welcome2.class.getName()));
-        fragments.add(Fragment.instantiate(this, Welcome3.class.getName()));
-        fragments.add(Fragment.instantiate(this, Welcome4.class.getName()));
-        fragments.add(Fragment.instantiate(this, Welcome5.class.getName()));
-        fragments.add(Fragment.instantiate(this, Welcome6.class.getName()));
+        fragments.add(Fragment.instantiate(this, SignUp1.class.getName()));
         this.mPagerAdapter  = new MyPagerAdapter(super.getSupportFragmentManager(), fragments);
         //
-        ViewPager pager = (ViewPager)super.findViewById(R.id.welcome_viewpager);
+        ViewPager pager = (ViewPager)super.findViewById(R.id.sign_up_viewpager);
         pager.setAdapter(this.mPagerAdapter);
 
     }
