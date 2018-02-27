@@ -19,34 +19,15 @@ import android.widget.TextView;
  * Created by root on 25/02/18.
  */
 
-class SignUp2 extends Fragment {
-
-    public static SignUp2 newInstance() {
-        SignUp2 fragment = new SignUp2();
-        return fragment;
-    }
+class SignUp2 extends AppCompatActivity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-    }
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        final View view = inflater.inflate(R.layout.sign_up_1, container, false);
-        return view;
-    }
-
-    @Override
-    public void onActivityCreated(Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-        RelativeLayout rl = (RelativeLayout) getView().findViewById(R.id.sign_up_1_linear_layout);
-        rl.setBackgroundColor(Color.argb(0xff, 0xff, 0xff, 0xff));
-        ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle("Daftar");
-    }
-
-    @Override
-    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
+        setContentView(R.layout.activity_sign_up_2);
+        LinearLayout ll = (LinearLayout) findViewById(R.id.sign_up_2_linear_layout);
+        ll.setBackgroundColor(Color.argb(0xff, 0xff, 0xff, 0xff));
+        this.getSupportActionBar().setTitle("Daftar");
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
     }
 }
