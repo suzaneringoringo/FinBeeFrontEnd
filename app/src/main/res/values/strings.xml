@@ -15,4 +15,8 @@
     <string name="phone_number">Nomor Telepon</string>
     <string name="sign_up_1_title">Info Kontak</string>
     <string name="sign_up_agreement">Setuju dengan ketentuan yang berlaku</string>
+    <string name="sign_up_2_title">Scan KTP</string>
+    <string name="sign_up_3_title">Scan Foto</string>
+    <string name="sign_up_4_title">Scan Kartu Kredit</string>
+    <string name="sign_up_5_title">Scan Kartu BPJS</string>
 </resources>

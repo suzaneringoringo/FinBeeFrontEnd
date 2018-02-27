@@ -11,13 +11,21 @@
         android:theme="@style/AppTheme">
         <activity android:name=".WelcomeActivity">
         </activity>
-        <activity android:name=".SignUp1">
+        <activity android:name=".RegisterBasicInfo">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SignUp2">
+        <activity android:name=".RegisterScanKTP">
+        </activity>
+        <activity android:name=".RegisterScanPhoto">
+        </activity>
+        <activity android:name=".RegisterScanCreditCard">
+        </activity>
+        <activity android:name=".RegisterScanBPJS">
+        </activity>
+        <activity android:name=".RegisterAdvancedInfo">
         </activity>
     </application>
 

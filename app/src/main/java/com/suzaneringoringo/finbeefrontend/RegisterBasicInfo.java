@@ -5,21 +5,13 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.RequiresApi;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.view.ViewPager;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.text.Html;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 
-import java.util.List;
-import java.util.Vector;
-
-public class SignUp1 extends AppCompatActivity {
+public class RegisterBasicInfo extends AppCompatActivity {
 
     private Context mContext = this;
     /** maintains the pager adapter*/
@@ -30,8 +22,9 @@ public class SignUp1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        super.setContentView(R.layout.activity_sign_up_1);
+        super.setContentView(R.layout.activity_register_basic_info);
         //initialsie the pager
+        getSupportActionBar().setTitle("Daftar");
     }
 
     public void confirmForm(View view) {
@@ -56,7 +49,7 @@ public class SignUp1 extends AppCompatActivity {
                 .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
                         Log.i("BUTTON", "TES5");
-                        Intent intent = new Intent(mContext, SignUp2.class);
+                        Intent intent = new Intent(mContext, RegisterScanKTP.class);
                         startActivity(intent);
                         finish();
                         dialog.cancel();

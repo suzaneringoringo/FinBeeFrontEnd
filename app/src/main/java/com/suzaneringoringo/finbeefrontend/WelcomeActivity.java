@@ -44,7 +44,7 @@ public class WelcomeActivity extends FragmentActivity {
     }
 
     public void signUp(View view) {
-        Intent intent = new Intent(this, SignUp1.class);
+        Intent intent = new Intent(this, RegisterBasicInfo.class);
         startActivity(intent);
     }
 }

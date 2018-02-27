@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/sign_up_1_linear_layout"
+    android:id="@+id/sign_up_3_linear_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
-
     <LinearLayout
-        android:id="@+id/sign_up_1_navigation"
+        android:id="@+id/sign_up_3_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/default_margin"
@@ -23,7 +17,7 @@
         <TextView
             android:layout_width="@dimen/nav_circle_size"
             android:layout_height="@dimen/nav_circle_size"
-            android:background="@drawable/bg_orange"
+            android:background="@drawable/bg_green"
             android:gravity="center"
             android:text="1"
             android:textColor="#FFFFFF"
@@ -33,7 +27,7 @@
             android:layout_width="@dimen/nav_circle_size"
             android:layout_height="@dimen/nav_circle_size"
             android:layout_marginLeft="@dimen/default_margin"
-            android:background="@drawable/bg_grey"
+            android:background="@drawable/bg_green"
             android:gravity="center"
             android:text="2"
             android:textColor="#FFFFFF"
@@ -43,7 +37,7 @@
             android:layout_width="@dimen/nav_circle_size"
             android:layout_height="@dimen/nav_circle_size"
             android:layout_marginLeft="@dimen/default_margin"
-            android:background="@drawable/bg_grey"
+            android:background="@drawable/bg_orange"
             android:gravity="center"
             android:text="3"
             android:textColor="#FFFFFF"
@@ -79,14 +73,24 @@
             android:textColor="#FFFFFF"
             android:textSize="@dimen/default_welcome_font" />
 
+        <TextView
+            android:layout_width="@dimen/nav_circle_size"
+            android:layout_height="@dimen/nav_circle_size"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:background="@drawable/bg_grey"
+            android:gravity="center"
+            android:text="7"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/default_welcome_font" />
+
     </LinearLayout>
 
     <TextView
-        android:id="@+id/sign_up_1_title"
+        android:id="@+id/sign_up_3_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/sign_up_1_navigation"
-        android:text="@string/sign_up_1_title"
+        android:layout_below="@id/sign_up_3_navigation"
+        android:text="@string/sign_up_3_title"
         android:textAlignment="center"
         android:textSize="@dimen/page_title"
         android:textStyle="bold" />
@@ -95,7 +99,7 @@
         android:id="@+id/main_content"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/sign_up_1_title"
+        android:layout_below="@id/sign_up_3_title"
         android:layout_margin="@dimen/default_margin"
         android:gravity="center_vertical">
 
@@ -110,48 +114,17 @@
                 android:gravity="center_vertical"
                 android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/name"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/name"
-                    android:textSize="@dimen/form_column_info_font" />
-
-                <EditText
-                    android:id="@+id/name_input"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/name"
-                    android:inputType="textPersonName" />
-
-                <TextView
-                    android:id="@+id/phone_number"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/default_margin"
-                    android:text="@string/phone_number"
-                    android:textSize="@dimen/form_column_info_font" />
-
-                <EditText
-                    android:id="@+id/phone_number_input"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/phone_number"
-                    android:inputType="phone" />
-
-                <CheckBox
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/default_margin"
-                    android:text="@string/sign_up_agreement" />
+                <ImageView
+                    android:layout_width="@dimen/welcome_image_dimenesion"
+                    android:layout_height="@dimen/welcome_image_dimenesion" />
 
                 <Button
                     android:id="@+id/next_button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/default_margin"
-                    android:text="Selanjutnya"
-                    android:onClick="confirmForm"
+                    android:text="Scan"
+                    android:onClick="scanPhoto"
                     android:background="@drawable/next_button" >
                 </Button>
 
@@ -161,4 +134,4 @@
 
     </LinearLayout>
 
-</RelativeLayout>
+</LinearLayout>
