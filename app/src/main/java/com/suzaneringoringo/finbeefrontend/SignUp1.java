@@ -4,11 +4,15 @@ import android.graphics.Color;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 /**
@@ -29,7 +33,7 @@ class SignUp1 extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.sign_up_1, container, false);
+        final View view = inflater.inflate(R.layout.sign_up_1, container, false);
         TextView navigation = (TextView) view.findViewById(R.id.sign_up_1_navigation);
         navigation.setText(Html.fromHtml(navigation.getText().toString()));
         return view;
@@ -38,8 +42,9 @@ class SignUp1 extends Fragment {
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        LinearLayout ll = (LinearLayout) getView().findViewById(R.id.sign_up_1_linear_layout);
-        ll.setBackgroundColor(Color.argb(0xff, 0xff, 0xff, 0xff));
+        RelativeLayout rl = (RelativeLayout) getView().findViewById(R.id.sign_up_1_linear_layout);
+        rl.setBackgroundColor(Color.argb(0xff, 0xff, 0xff, 0xff));
+        ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle("Daftar");
     }
 
     @Override

@@ -5,12 +5,13 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import java.util.List;
 import java.util.Vector;
 
-public class SignUpActivity extends FragmentActivity {
+public class SignUpActivity extends AppCompatActivity {
     /** maintains the pager adapter*/
     private MyPagerAdapter mPagerAdapter;
     /* (non-Javadoc)

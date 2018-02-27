@@ -3,4 +3,6 @@
     <dimen name="welcome_image_dimenesion">200dp</dimen>
     <dimen name="default_margin">16dp</dimen>
     <dimen name="default_welcome_font">16sp</dimen>
+    <dimen name="form_column_info">12sp</dimen>
+    <dimen name="top_nav">80dp</dimen>
 </resources>
