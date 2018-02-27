@@ -19,10 +19,10 @@ import android.widget.TextView;
  * Created by root on 25/02/18.
  */
 
-class SignUp1 extends Fragment {
+class SignUp2 extends Fragment {
 
-    public static SignUp1 newInstance() {
-        SignUp1 fragment = new SignUp1();
+    public static SignUp2 newInstance() {
+        SignUp2 fragment = new SignUp2();
         return fragment;
     }
 

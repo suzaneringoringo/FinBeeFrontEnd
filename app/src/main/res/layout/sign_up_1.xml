@@ -12,21 +12,91 @@
         android:layout_height="?attr/actionBarSize"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
-    <TextView
+    <LinearLayout
         android:id="@+id/sign_up_1_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#FFFFA413"
-        android:text="@string/sign_up_1_navigation"
-        android:textColor="#FFFFFF"
-        android:textSize="12sp" />
+        android:layout_margin="@dimen/default_margin"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/nav_circle_size"
+            android:layout_height="@dimen/nav_circle_size"
+            android:background="@drawable/bg_orange"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/default_welcome_font" />
+
+        <TextView
+            android:layout_width="@dimen/nav_circle_size"
+            android:layout_height="@dimen/nav_circle_size"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:background="@drawable/bg_grey"
+            android:gravity="center"
+            android:text="2"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/default_welcome_font" />
+
+        <TextView
+            android:layout_width="@dimen/nav_circle_size"
+            android:layout_height="@dimen/nav_circle_size"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:background="@drawable/bg_grey"
+            android:gravity="center"
+            android:text="3"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/default_welcome_font" />
+
+        <TextView
+            android:layout_width="@dimen/nav_circle_size"
+            android:layout_height="@dimen/nav_circle_size"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:background="@drawable/bg_grey"
+            android:gravity="center"
+            android:text="4"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/default_welcome_font" />
+
+        <TextView
+            android:layout_width="@dimen/nav_circle_size"
+            android:layout_height="@dimen/nav_circle_size"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:background="@drawable/bg_grey"
+            android:gravity="center"
+            android:text="5"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/default_welcome_font" />
+
+        <TextView
+            android:layout_width="@dimen/nav_circle_size"
+            android:layout_height="@dimen/nav_circle_size"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:background="@drawable/bg_grey"
+            android:gravity="center"
+            android:text="6"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/default_welcome_font" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sign_up_1_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sign_up_1_navigation"
+        android:text="@string/sign_up_1_title"
+        android:textAlignment="center"
+        android:textSize="@dimen/page_title"
+        android:textStyle="bold" />
 
     <LinearLayout
         android:id="@+id/main_content"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@id/next_button"
-        android:layout_below="@id/sign_up_1_navigation"
+        android:layout_below="@id/sign_up_1_title"
+        android:layout_margin="@dimen/default_margin"
         android:gravity="center_vertical">
 
         <ScrollView
@@ -37,7 +107,6 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/default_margin"
                 android:gravity="center_vertical"
                 android:orientation="vertical">
 
@@ -46,13 +115,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/name"
-                    android:textSize="@dimen/form_column_info" />
+                    android:textSize="@dimen/form_column_info_font" />
 
                 <EditText
                     android:id="@+id/name_input"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/name" />
+                    android:hint="@string/name"
+                    android:inputType="textPersonName" />
 
                 <TextView
                     android:id="@+id/phone_number"
@@ -60,26 +130,35 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/default_margin"
                     android:text="@string/phone_number"
-                    android:textSize="@dimen/form_column_info" />
+                    android:textSize="@dimen/form_column_info_font" />
 
                 <EditText
                     android:id="@+id/phone_number_input"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/phone_number" />
+                    android:hint="@string/phone_number"
+                    android:inputType="phone" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin"
+                    android:text="@string/sign_up_agreement" />
+
+                <Button
+                    android:id="@+id/next_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin"
+                    android:text="Selanjutnya"
+                    android:onClick="confirmForm"
+                    android:background="@drawable/next_button" >
+                </Button>
 
             </LinearLayout>
 
         </ScrollView>
 
     </LinearLayout>
-
-    <android.support.v7.widget.ButtonBarLayout
-        android:id="@+id/next_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true">
-
-    </android.support.v7.widget.ButtonBarLayout>
 
 </RelativeLayout>
