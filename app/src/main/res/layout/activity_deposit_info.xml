@@ -47,7 +47,6 @@
                 android:background="@color/dark_grey" />
 
             <TextView
-                android:id="@+id/credit_score"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -56,7 +55,7 @@
                 android:gravity="center"
                 android:text="Rp800.000,00"
                 android:textAlignment="center"
-                android:textColor="#1A237E"
+                android:textColor="@color/colorPrimaryDark"
                 android:textSize="24sp" />
 
             <View

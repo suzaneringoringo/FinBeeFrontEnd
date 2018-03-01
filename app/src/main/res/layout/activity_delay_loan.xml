@@ -52,6 +52,7 @@
             android:layout_marginLeft="8dp"
             android:padding="@dimen/default_margin"
             android:text="Ya"
+            android:onClick="proposeLoan"
             android:background="@drawable/button_green"
             tools:ignore="Suspicious0dp">
         </Button>

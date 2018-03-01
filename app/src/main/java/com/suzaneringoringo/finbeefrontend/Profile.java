@@ -11,18 +11,18 @@ import android.widget.LinearLayout;
  * Created by root on 01/03/18.
  */
 
-class LoanSummary extends AppCompatActivity {
+class Profile extends AppCompatActivity {
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_loan_summary);
-        getSupportActionBar().setTitle("Ringkasan Pinjaman");
-        LinearLayout ll = (LinearLayout) findViewById(R.id.loan_summary_background);
+        setContentView(R.layout.activity_profile);
+        getSupportActionBar().setTitle("Profil");
+        LinearLayout ll = (LinearLayout) findViewById(R.id.profile_background);
         ll.setBackgroundColor(Color.argb(0xff, 0xff, 0xff, 0xff));
     }
 
-    public void openProfile(View view) {
-        Intent intent = new Intent(this, Profile.class);
+    public void proposeLoan(View view) {
+        Intent intent = new Intent(this, ProposeLoan.class);
         startActivity(intent);
         finish();
     }

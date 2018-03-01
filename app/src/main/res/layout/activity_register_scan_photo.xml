@@ -146,7 +146,7 @@
 
                 <ImageView
                     android:layout_width="@dimen/welcome_image_dimension"
-                    android:layout_height="@dimen/welcome_image_dimension" />
+                    android:layout_height="@dimen/scanned_image_dimension" />
 
                 <Button
                     android:id="@+id/next_button"

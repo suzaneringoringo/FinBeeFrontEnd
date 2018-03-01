@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:id="@+id/loan_summary_background"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/default_margin"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/form_icon_width"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/name"
+                    android:onClick="openProfile"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:text="Davin Kurniawan"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/page_title"/>
+
+            </LinearLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="0px"
+                        android:layout_height="match_parent"
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:text="Total pinjaman"
+                        android:paddingEnd="@dimen/half_default_margin"
+                        android:textAlignment="viewEnd"
+                        android:textStyle="bold"
+                        android:paddingRight="@dimen/half_default_margin"
+                        android:gravity="end" />
+
+                    <TextView
+                        android:layout_width="0px"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:paddingStart="@dimen/half_default_margin"
+                        android:textAlignment="viewStart"
+                        android:paddingLeft="@dimen/half_default_margin"
+                        android:layout_weight="1"
+                        android:text="Rp800.000,00"
+                        android:gravity="start" />
+
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="@dimen/half_default_margin"
+                    android:layout_marginBottom="@dimen/half_default_margin"
+                    android:background="@color/dark_grey" />
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="0px"
+                        android:layout_height="match_parent"
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:text="Pinjaman yang digunakan"
+                        android:paddingEnd="@dimen/half_default_margin"
+                        android:textAlignment="viewEnd"
+                        android:textStyle="bold"
+                        android:paddingRight="@dimen/half_default_margin"
+                        android:gravity="end" />
+
+                    <TextView
+                        android:layout_width="0px"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:paddingStart="@dimen/half_default_margin"
+                        android:textAlignment="viewStart"
+                        android:paddingLeft="@dimen/half_default_margin"
+                        android:layout_weight="1"
+                        android:text="Rp500.000,00"
+                        android:gravity="start" />
+
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="@dimen/half_default_margin"
+                    android:layout_marginBottom="@dimen/half_default_margin"
+                    android:background="@color/dark_grey" />
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="0px"
+                        android:layout_height="match_parent"
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:text="Account FinBee"
+                        android:paddingEnd="@dimen/half_default_margin"
+                        android:textAlignment="viewEnd"
+                        android:textStyle="bold"
+                        android:paddingRight="@dimen/half_default_margin"
+                        android:gravity="end" />
+
+                    <TextView
+                        android:layout_width="0px"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:paddingStart="@dimen/half_default_margin"
+                        android:textAlignment="viewStart"
+                        android:paddingLeft="@dimen/half_default_margin"
+                        android:layout_weight="1"
+                        android:text="Rp300.000,00"
+                        android:gravity="start" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="0px"
+                        android:layout_height="match_parent"
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:text="Pembelian melalui FinBee"
+                        android:paddingEnd="@dimen/half_default_margin"
+                        android:textAlignment="viewEnd"
+                        android:textStyle="bold"
+                        android:paddingRight="@dimen/half_default_margin"
+                        android:gravity="end" />
+
+                    <TextView
+                        android:layout_width="0px"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:paddingStart="@dimen/half_default_margin"
+                        android:textAlignment="viewStart"
+                        android:paddingLeft="@dimen/half_default_margin"
+                        android:layout_weight="1"
+                        android:text="Rp0,00"
+                        android:gravity="start" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="0px"
+                        android:layout_height="match_parent"
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:text="Waktu jatuh tempo"
+                        android:paddingEnd="@dimen/half_default_margin"
+                        android:textAlignment="viewEnd"
+                        android:textStyle="bold"
+                        android:paddingRight="@dimen/half_default_margin"
+                        android:gravity="end" />
+
+                    <TextView
+                        android:layout_width="0px"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:paddingStart="@dimen/half_default_margin"
+                        android:textAlignment="viewStart"
+                        android:paddingLeft="@dimen/half_default_margin"
+                        android:layout_weight="1"
+                        android:text="-"
+                        android:gravity="start" />
+
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="@dimen/half_default_margin"
+                    android:layout_marginBottom="@dimen/half_default_margin"
+                    android:background="@color/dark_grey" />
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="0px"
+                        android:layout_height="match_parent"
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:text="Transfer ke rekening"
+                        android:paddingEnd="@dimen/half_default_margin"
+                        android:textAlignment="viewEnd"
+                        android:textStyle="bold"
+                        android:paddingRight="@dimen/half_default_margin"
+                        android:gravity="end" />
+
+                    <TextView
+                        android:layout_width="0px"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:paddingStart="@dimen/half_default_margin"
+                        android:textAlignment="viewStart"
+                        android:paddingLeft="@dimen/half_default_margin"
+                        android:layout_weight="1"
+                        android:text="Rp500.000,00"
+                        android:gravity="start" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="0px"
+                        android:layout_height="match_parent"
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:text="Waktu jatuh tempo"
+                        android:paddingEnd="@dimen/half_default_margin"
+                        android:textAlignment="viewEnd"
+                        android:textStyle="bold"
+                        android:paddingRight="@dimen/half_default_margin"
+                        android:gravity="end" />
+
+                    <TextView
+                        android:layout_width="0px"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:paddingStart="@dimen/half_default_margin"
+                        android:textAlignment="viewStart"
+                        android:paddingLeft="@dimen/half_default_margin"
+                        android:layout_weight="1"
+                        android:text="12 April 2018"
+                        android:gravity="start" />
+
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="@dimen/half_default_margin"
+                    android:layout_marginBottom="@dimen/half_default_margin"
+                    android:background="@color/dark_grey" />
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="0px"
+                        android:layout_height="match_parent"
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:text="Biaya administrasi yang belum dibayar"
+                        android:paddingEnd="@dimen/half_default_margin"
+                        android:textAlignment="viewEnd"
+                        android:textStyle="bold"
+                        android:paddingRight="@dimen/half_default_margin"
+                        android:gravity="end" />
+
+                    <TextView
+                        android:layout_width="0px"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:paddingStart="@dimen/half_default_margin"
+                        android:textAlignment="viewStart"
+                        android:paddingLeft="@dimen/half_default_margin"
+                        android:layout_weight="1"
+                        android:text="Rp10.000,00 (1 bulan)"
+                        android:gravity="start" />
+
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

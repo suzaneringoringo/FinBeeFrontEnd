@@ -48,4 +48,7 @@
     <string name="delay_loan_terms"><![CDATA[<p>Berdasarkan skor kredit Anda saat ini, Anda dapat mengajukan <b>pinjaman kebutuhan mendadak</b> dengan jumlah maksimum Rp5.000.000,00 dan proses hanya 1 menit.<p>Apakah Anda ingin segera mengajukan pinjaman kebutuhan mendadak??]]></string>
     <string name="sign_up_6_title">Info Kontak</string>
     <string name="log_in">Log in to your account</string>
+    <string name="reason_for_loan">Alasan kebutuhan pinjaman</string>
+    <string name="mock_max_loan_explanation"><![CDATA[Berdasarkan skor kredit Anda, maksimal pinjaman yang bisa Anda peroleh adalah <b>Rp3.000.000,00</b>.]]></string>
+    <string name="loan_amount">Jumlah pinjaman</string>
 </resources>

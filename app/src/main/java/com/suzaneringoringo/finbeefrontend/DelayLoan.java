@@ -66,4 +66,10 @@ class DelayLoan extends AppCompatActivity {
                 .setIcon(android.R.drawable.ic_dialog_alert)
                 .show();
     }
+
+    public void proposeLoan(View view) {
+        Intent intent = new Intent(this, ProposeLoan.class);
+        startActivity(intent);
+        finish();
+    }
 }
