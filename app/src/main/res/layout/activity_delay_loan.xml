@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/delay_loan_background"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin"
+        android:text="Anda menunda pinjaman mudah dan akan menggunakannya kemudian."
+        android:textAlignment="center"
+        android:textSize="@dimen/page_title"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/delay_loan_terms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:layout_marginRight="@dimen/default_margin"
+        android:text="@string/delay_loan_terms" />
+
+    <LinearLayout
+        android:id="@+id/bottom_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin"
+        android:layout_marginTop="@dimen/default_margin"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/no_button"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/button_red"
+            android:padding="@dimen/default_margin"
+            android:text="Tidak"
+            android:onClick="suddenLoan"
+            tools:ignore="Suspicious0dp"></Button>
+
+        <Button
+            android:id="@+id/yes_button"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:padding="@dimen/default_margin"
+            android:text="Ya"
+            android:background="@drawable/button_green"
+            tools:ignore="Suspicious0dp">
+        </Button>
+
+    </LinearLayout>
+
+</LinearLayout>

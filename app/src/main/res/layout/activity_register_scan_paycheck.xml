@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/sign_up_1_linear_layout"
+    android:id="@+id/sign_up_7_linear_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
     <LinearLayout
-        android:id="@+id/sign_up_1_navigation"
+        android:id="@+id/sign_up_7_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/default_margin"
@@ -17,7 +17,7 @@
         <TextView
             android:layout_width="@dimen/nav_circle_size"
             android:layout_height="@dimen/nav_circle_size"
-            android:background="@drawable/bg_orange"
+            android:background="@drawable/bg_primary"
             android:gravity="center"
             android:text="1"
             android:textColor="#FFFFFF"
@@ -27,12 +27,12 @@
             android:layout_width="@dimen/default_margin"
             android:layout_height="@dimen/line_height"
             android:layout_gravity="center_vertical"
-            android:background="@color/dark_grey" />
+            android:background="@color/colorPrimary" />
 
         <TextView
             android:layout_width="@dimen/nav_circle_size"
             android:layout_height="@dimen/nav_circle_size"
-            android:background="@drawable/bg_grey"
+            android:background="@drawable/bg_primary"
             android:gravity="center"
             android:text="2"
             android:textColor="#FFFFFF"
@@ -42,12 +42,12 @@
             android:layout_width="@dimen/default_margin"
             android:layout_height="@dimen/line_height"
             android:layout_gravity="center_vertical"
-            android:background="@color/dark_grey" />
+            android:background="@color/colorPrimary" />
 
         <TextView
             android:layout_width="@dimen/nav_circle_size"
             android:layout_height="@dimen/nav_circle_size"
-            android:background="@drawable/bg_grey"
+            android:background="@drawable/bg_primary"
             android:gravity="center"
             android:text="3"
             android:textColor="#FFFFFF"
@@ -57,12 +57,12 @@
             android:layout_width="@dimen/default_margin"
             android:layout_height="@dimen/line_height"
             android:layout_gravity="center_vertical"
-            android:background="@color/dark_grey" />
+            android:background="@color/colorPrimary" />
 
         <TextView
             android:layout_width="@dimen/nav_circle_size"
             android:layout_height="@dimen/nav_circle_size"
-            android:background="@drawable/bg_grey"
+            android:background="@drawable/bg_primary"
             android:gravity="center"
             android:text="4"
             android:textColor="#FFFFFF"
@@ -72,12 +72,12 @@
             android:layout_width="@dimen/default_margin"
             android:layout_height="@dimen/line_height"
             android:layout_gravity="center_vertical"
-            android:background="@color/dark_grey" />
+            android:background="@color/colorPrimary" />
 
         <TextView
             android:layout_width="@dimen/nav_circle_size"
             android:layout_height="@dimen/nav_circle_size"
-            android:background="@drawable/bg_grey"
+            android:background="@drawable/bg_primary"
             android:gravity="center"
             android:text="5"
             android:textColor="#FFFFFF"
@@ -87,12 +87,12 @@
             android:layout_width="@dimen/default_margin"
             android:layout_height="@dimen/line_height"
             android:layout_gravity="center_vertical"
-            android:background="@color/dark_grey" />
+            android:background="@color/colorPrimary" />
 
         <TextView
             android:layout_width="@dimen/nav_circle_size"
             android:layout_height="@dimen/nav_circle_size"
-            android:background="@drawable/bg_grey"
+            android:background="@drawable/bg_primary"
             android:gravity="center"
             android:text="6"
             android:textColor="#FFFFFF"
@@ -102,12 +102,12 @@
             android:layout_width="@dimen/default_margin"
             android:layout_height="@dimen/line_height"
             android:layout_gravity="center_vertical"
-            android:background="@color/dark_grey" />
+            android:background="@color/colorPrimary" />
 
         <TextView
             android:layout_width="@dimen/nav_circle_size"
             android:layout_height="@dimen/nav_circle_size"
-            android:background="@drawable/bg_grey"
+            android:background="@drawable/bg_orange"
             android:gravity="center"
             android:text="7"
             android:textColor="#FFFFFF"
@@ -116,11 +116,11 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/sign_up_1_title"
+        android:id="@+id/sign_up_7_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/sign_up_1_navigation"
-        android:text="@string/sign_up_1_title"
+        android:layout_below="@id/sign_up_7_navigation"
+        android:text="@string/sign_up_7_title"
         android:textAlignment="center"
         android:textSize="@dimen/page_title"
         android:textStyle="bold" />
@@ -129,7 +129,7 @@
         android:id="@+id/main_content"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/sign_up_1_title"
+        android:layout_below="@id/sign_up_7_title"
         android:layout_margin="@dimen/default_margin"
         android:gravity="center_vertical">
 
@@ -144,62 +144,19 @@
                 android:gravity="center_vertical"
                 android:orientation="vertical">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="@dimen/form_icon_width"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/name" />
-
-                    <EditText
-                        android:id="@+id/name_input"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginStart="8dp"
-                        android:hint="@string/name"
-                        android:inputType="textPersonName" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="@dimen/form_icon_width"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/phone" />
-
-                    <EditText
-                        android:id="@+id/phone_number_input"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginStart="8dp"
-                        android:hint="@string/phone_number"
-                        android:inputType="phone" />
-
-                </LinearLayout>
-
-                <CheckBox
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/default_margin"
-                    android:text="@string/sign_up_agreement" />
+                <ImageView
+                    android:layout_width="@dimen/welcome_image_dimension"
+                    android:layout_height="@dimen/welcome_image_dimension" />
 
                 <Button
                     android:id="@+id/next_button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/default_margin"
-                    android:background="@drawable/button_orange"
-                    android:onClick="confirmForm"
-                    android:text="Selanjutnya"></Button>
+                    android:text="Scan"
+                    android:onClick="scanPaycheck"
+                    android:background="@drawable/button_orange" >
+                </Button>
 
             </LinearLayout>
 
@@ -207,4 +164,4 @@
 
     </LinearLayout>
 
-</RelativeLayout>
+</LinearLayout>

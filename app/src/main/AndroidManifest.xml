@@ -12,10 +12,6 @@
         <activity android:name=".WelcomeActivity">
         </activity>
         <activity android:name=".RegisterBasicInfo">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".RegisterScanKTP">
         </activity>
@@ -26,6 +22,20 @@
         <activity android:name=".RegisterScanBPJS">
         </activity>
         <activity android:name=".RegisterAdvancedInfo">
+        </activity>
+        <activity android:name=".RegisterScanPaycheck">
+        </activity>
+        <activity android:name=".CreditScore">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DepositInfo">
+        </activity>
+        <activity android:name=".DelayLoan">
+        </activity>
+        <activity android:name=".Login">
         </activity>
     </application>
 

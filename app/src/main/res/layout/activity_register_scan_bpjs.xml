@@ -17,66 +17,96 @@
         <TextView
             android:layout_width="@dimen/nav_circle_size"
             android:layout_height="@dimen/nav_circle_size"
-            android:background="@drawable/bg_green"
+            android:background="@drawable/bg_primary"
             android:gravity="center"
             android:text="1"
             android:textColor="#FFFFFF"
             android:textSize="@dimen/default_welcome_font" />
 
+        <View
+            android:layout_width="@dimen/default_margin"
+            android:layout_height="@dimen/line_height"
+            android:layout_gravity="center_vertical"
+            android:background="@color/colorPrimary" />
+
         <TextView
             android:layout_width="@dimen/nav_circle_size"
             android:layout_height="@dimen/nav_circle_size"
-            android:layout_marginLeft="@dimen/default_margin"
-            android:background="@drawable/bg_green"
+            android:background="@drawable/bg_primary"
             android:gravity="center"
             android:text="2"
             android:textColor="#FFFFFF"
             android:textSize="@dimen/default_welcome_font" />
 
+        <View
+            android:layout_width="@dimen/default_margin"
+            android:layout_height="@dimen/line_height"
+            android:layout_gravity="center_vertical"
+            android:background="@color/colorPrimary" />
+
         <TextView
             android:layout_width="@dimen/nav_circle_size"
             android:layout_height="@dimen/nav_circle_size"
-            android:layout_marginLeft="@dimen/default_margin"
-            android:background="@drawable/bg_green"
+            android:background="@drawable/bg_primary"
             android:gravity="center"
             android:text="3"
             android:textColor="#FFFFFF"
             android:textSize="@dimen/default_welcome_font" />
 
+        <View
+            android:layout_width="@dimen/default_margin"
+            android:layout_height="@dimen/line_height"
+            android:layout_gravity="center_vertical"
+            android:background="@color/colorPrimary" />
+
         <TextView
             android:layout_width="@dimen/nav_circle_size"
             android:layout_height="@dimen/nav_circle_size"
-            android:layout_marginLeft="@dimen/default_margin"
-            android:background="@drawable/bg_green"
+            android:background="@drawable/bg_primary"
             android:gravity="center"
             android:text="4"
             android:textColor="#FFFFFF"
             android:textSize="@dimen/default_welcome_font" />
 
+        <View
+            android:layout_width="@dimen/default_margin"
+            android:layout_height="@dimen/line_height"
+            android:layout_gravity="center_vertical"
+            android:background="@color/colorPrimary" />
+
         <TextView
             android:layout_width="@dimen/nav_circle_size"
             android:layout_height="@dimen/nav_circle_size"
-            android:layout_marginLeft="@dimen/default_margin"
             android:background="@drawable/bg_orange"
             android:gravity="center"
             android:text="5"
             android:textColor="#FFFFFF"
             android:textSize="@dimen/default_welcome_font" />
 
+        <View
+            android:layout_width="@dimen/default_margin"
+            android:layout_height="@dimen/line_height"
+            android:layout_gravity="center_vertical"
+            android:background="@color/dark_grey" />
+
         <TextView
             android:layout_width="@dimen/nav_circle_size"
             android:layout_height="@dimen/nav_circle_size"
-            android:layout_marginLeft="@dimen/default_margin"
             android:background="@drawable/bg_grey"
             android:gravity="center"
             android:text="6"
             android:textColor="#FFFFFF"
             android:textSize="@dimen/default_welcome_font" />
 
+        <View
+            android:layout_width="@dimen/default_margin"
+            android:layout_height="@dimen/line_height"
+            android:layout_gravity="center_vertical"
+            android:background="@color/dark_grey" />
+
         <TextView
             android:layout_width="@dimen/nav_circle_size"
             android:layout_height="@dimen/nav_circle_size"
-            android:layout_marginLeft="@dimen/default_margin"
             android:background="@drawable/bg_grey"
             android:gravity="center"
             android:text="7"
@@ -115,8 +145,8 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="@dimen/welcome_image_dimenesion"
-                    android:layout_height="@dimen/welcome_image_dimenesion" />
+                    android:layout_width="@dimen/welcome_image_dimension"
+                    android:layout_height="@dimen/welcome_image_dimension" />
 
                 <Button
                     android:id="@+id/next_button"
@@ -125,7 +155,7 @@
                     android:layout_marginTop="@dimen/default_margin"
                     android:text="Scan"
                     android:onClick="scanBPJS"
-                    android:background="@drawable/next_button" >
+                    android:background="@drawable/button_orange" >
                 </Button>
 
             </LinearLayout>

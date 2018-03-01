@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:id="@+id/credit_score_background"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/default_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="@dimen/page_title"
+                android:text="@string/skor_kredit_anda"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/credit_score"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/welcome_image_dimension"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="7,37"
+                android:textSize="112sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAlignment="center" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/dark_grey"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_marginTop="@dimen/default_margin"
+                android:text="@string/score_credit_terms_title"
+                android:textSize="@dimen/form_section_title_size"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/score_credit_terms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin"
+                android:layout_marginLeft="@dimen/default_margin"
+                android:layout_marginRight="@dimen/default_margin"/>
+
+            <Button
+                android:id="@+id/next_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin"
+                android:text="Selanjutnya"
+                android:onClick="scoreOK"
+                android:background="@drawable/button_orange" >
+            </Button>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

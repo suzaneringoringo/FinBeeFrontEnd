@@ -30,8 +30,6 @@ class Welcome4 extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_welcome_4, container, false);
-        TextView subscreen_information = (TextView) view.findViewById(R.id.subscreen_information_4);
-        subscreen_information.setText(Html.fromHtml("&#8226  &#8226  &#8226  &deg  &#8226  &#8226"));
         TextView subscreen_description = (TextView) view.findViewById(R.id.subscreen_description_4);
         subscreen_description.setText(Html.fromHtml("<p>Hanya Finbee yang bisa memberikan <b>pinjaman mudah</b> maksimum Rp 1 juta tanpa bunga selama 7 hari.<p>Anda juga dapat memperoleh kebutuhan <b>Pinjaman Kebutuhan Mendadak</b> dengan bunga dan biaya adniminstrasi yang paling rendah.<p>Anda juga dapat memperoleh <b>Pinjaman Modal Kerja</b> denagan bunga yang paling rendah."));
         return view;

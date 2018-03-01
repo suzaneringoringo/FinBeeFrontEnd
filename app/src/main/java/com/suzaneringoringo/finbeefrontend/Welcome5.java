@@ -30,8 +30,6 @@ class Welcome5 extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_welcome_5, container, false);
-        TextView subscreen_information = (TextView) view.findViewById(R.id.subscreen_information_5);
-        subscreen_information.setText(Html.fromHtml("&#8226  &#8226  &#8226  &#8226  &deg  &#8226"));
         TextView subscreen_description = (TextView) view.findViewById(R.id.subscreen_description_5);
         subscreen_description.setText(Html.fromHtml(subscreen_description.getText().toString()));
         return view;

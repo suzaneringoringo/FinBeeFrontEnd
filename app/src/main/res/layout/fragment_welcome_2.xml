@@ -13,20 +13,79 @@
         android:orientation="vertical">
 
         <ImageView
-            android:layout_width="@dimen/welcome_image_dimenesion"
-            android:layout_height="@dimen/welcome_image_dimenesion"
+            android:layout_width="@dimen/welcome_image_dimension"
+            android:layout_height="@dimen/welcome_image_dimension"
             android:gravity="center_horizontal"
             android:scaleType="centerCrop"
             android:src="@drawable/welcome_2" />
 
-        <TextView
-            android:id="@+id/subscreen_information_2"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
             android:gravity="center_horizontal"
-            android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:layout_marginTop="@dimen/default_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/welcome_nav_circle_size"
+                android:layout_height="@dimen/welcome_nav_circle_size"
+                android:background="@drawable/bg_white"
+                android:gravity="center"
+                android:text=" "
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/default_welcome_font" />
+
+            <TextView
+                android:layout_width="@dimen/welcome_nav_circle_size"
+                android:layout_height="@dimen/welcome_nav_circle_size"
+                android:layout_marginLeft="@dimen/default_margin"
+                android:background="@drawable/bg_white"
+                android:gravity="center"
+                android:text=" "
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/default_welcome_font" />
+
+            <TextView
+                android:layout_width="@dimen/welcome_nav_circle_size"
+                android:layout_height="@dimen/welcome_nav_circle_size"
+                android:layout_marginLeft="@dimen/default_margin"
+                android:background="@drawable/bg_transparent"
+                android:gravity="center"
+                android:text=" "
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/default_welcome_font" />
+
+            <TextView
+                android:layout_width="@dimen/welcome_nav_circle_size"
+                android:layout_height="@dimen/welcome_nav_circle_size"
+                android:layout_marginLeft="@dimen/default_margin"
+                android:background="@drawable/bg_transparent"
+                android:gravity="center"
+                android:text=" "
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/default_welcome_font" />
+
+            <TextView
+                android:layout_width="@dimen/welcome_nav_circle_size"
+                android:layout_height="@dimen/welcome_nav_circle_size"
+                android:layout_marginLeft="@dimen/default_margin"
+                android:background="@drawable/bg_transparent"
+                android:gravity="center"
+                android:text=" "
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/default_welcome_font" />
+
+            <TextView
+                android:layout_width="@dimen/welcome_nav_circle_size"
+                android:layout_height="@dimen/welcome_nav_circle_size"
+                android:layout_marginLeft="@dimen/default_margin"
+                android:background="@drawable/bg_transparent"
+                android:gravity="center"
+                android:text=" "
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/default_welcome_font" />
+
+        </LinearLayout>
 
         <TextView
             android:id="@+id/subscreen_description_2"

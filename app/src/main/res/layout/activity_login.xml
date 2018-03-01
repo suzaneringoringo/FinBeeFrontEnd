@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_login_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_margin"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/welcome_image_dimension"
+                android:layout_height="@dimen/welcome_image_dimension"
+                android:gravity="center_horizontal"
+                android:scaleType="centerCrop"
+                android:src="@drawable/finbee" />
+
+            <Button
+                android:id="@+id/facebook_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin"
+                android:background="@drawable/button_facebook"
+                android:text="@string/facebook_login"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/sign_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin"
+                android:background="@drawable/button_orange"
+                android:text="@string/log_in" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

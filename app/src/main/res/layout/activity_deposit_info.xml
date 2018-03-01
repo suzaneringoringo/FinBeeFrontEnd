@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/credit_score_background"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_buttons">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/default_margin"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/welcome_image_dimension"
+                android:gravity="center_horizontal"
+                android:src="@drawable/deposit" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin"
+                android:text="Selamat! Anda sudah memperoleh pinjaman mudah."
+                android:textAlignment="center"
+                android:textSize="@dimen/page_title"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pinjaman Mudah sudah Anda perolah di dalam tabungan FinBee."
+                android:textSize="@dimen/default_welcome_font"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/default_margin"
+                android:background="@color/dark_grey" />
+
+            <TextView
+                android:id="@+id/credit_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/default_margin"
+                android:layout_marginTop="@dimen/default_margin"
+                android:gravity="center"
+                android:text="Rp800.000,00"
+                android:textAlignment="center"
+                android:textColor="#1A237E"
+                android:textSize="24sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/dark_grey" />
+
+            <LinearLayout
+                android:id="@+id/bottom_buttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/button_orange"
+                    android:padding="@dimen/default_margin"
+                    android:text="Tetap di tabungan Finbee"
+                    android:onClick="delayLoan"
+                    tools:ignore="Suspicious0dp"></Button>
+
+                <Button
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:padding="@dimen/default_margin"
+                    android:text="Transfer ke rekening bank saya"
+                    android:background="@drawable/button_orange"
+                    android:onClick="transfer"
+                    tools:ignore="Suspicious0dp">
+                </Button>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

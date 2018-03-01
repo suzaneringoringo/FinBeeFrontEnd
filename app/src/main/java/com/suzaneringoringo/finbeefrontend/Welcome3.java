@@ -30,8 +30,6 @@ class Welcome3 extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_welcome_3, container, false);
-        TextView subscreen_information = (TextView) view.findViewById(R.id.subscreen_information_3);
-        subscreen_information.setText(Html.fromHtml("&#8226  &#8226  &deg  &#8226  &#8226  &#8226"));
         TextView subscreen_description = (TextView) view.findViewById(R.id.subscreen_description_3);
         subscreen_description.setText(Html.fromHtml("<p>Skor Anda dapat berubah naik dan turun.<p>Semakin banyak informasi yang anda berikan maka semakin tinggi Skor Kredit.<p>Pembayaran pinjaman tepat waktu akan menaikkan Skor Kredit dan akan menurun atas setiap keterlambatan pembayaran."));
         return view;
