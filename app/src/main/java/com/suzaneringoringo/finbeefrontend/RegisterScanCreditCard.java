@@ -17,7 +17,7 @@ class RegisterScanCreditCard extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_scan_creditcard);
-        LinearLayout ll = (LinearLayout) findViewById(R.id.sign_up_4_linear_layout);
+        LinearLayout ll = (LinearLayout) findViewById(R.id.sign_up_5_linear_layout);
         ll.setBackgroundColor(Color.argb(0xff, 0xff, 0xff, 0xff));
         overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
     }

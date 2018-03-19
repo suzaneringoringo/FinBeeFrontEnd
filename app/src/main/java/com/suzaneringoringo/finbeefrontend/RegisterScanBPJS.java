@@ -16,13 +16,13 @@ public class RegisterScanBPJS extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_scan_bpjs);
-        LinearLayout ll = (LinearLayout) findViewById(R.id.sign_up_5_linear_layout);
+        LinearLayout ll = (LinearLayout) findViewById(R.id.sign_up_6_linear_layout);
         ll.setBackgroundColor(Color.argb(0xff, 0xff, 0xff, 0xff));
         overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
     }
 
     public void scanBPJS(View view) {
-        Intent intent = new Intent(this, RegisterAdvancedInfo.class);
+        Intent intent = new Intent(this, RegisterScanPaycheck.class);
         startActivity(intent);
         finish();
     }

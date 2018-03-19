@@ -139,6 +139,21 @@
             android:textColor="#FFFFFF"
             android:textSize="@dimen/default_welcome_font" />
 
+        <View
+            android:layout_width="@dimen/default_margin"
+            android:layout_height="@dimen/line_height"
+            android:layout_gravity="center_vertical"
+            android:background="@color/dark_grey" />
+
+        <TextView
+            android:layout_width="@dimen/nav_circle_size"
+            android:layout_height="@dimen/nav_circle_size"
+            android:background="@drawable/bg_grey"
+            android:gravity="center"
+            android:text="8"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/default_welcome_font" />
+
     </LinearLayout>
 
     <TextView

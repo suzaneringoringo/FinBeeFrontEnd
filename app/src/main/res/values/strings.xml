@@ -17,8 +17,9 @@
     <string name="sign_up_agreement">Setuju dengan ketentuan yang berlaku</string>
     <string name="sign_up_2_title">Scan KTP</string>
     <string name="sign_up_3_title">Scan Foto</string>
-    <string name="sign_up_4_title">Scan Kartu Kredit</string>
-    <string name="sign_up_5_title">Scan Kartu BPJS</string>
+    <string name="sign_up_4_title">Scan Foto Tanda Pengenal Kerja</string>
+    <string name="sign_up_5_title">Scan Kartu Kredit</string>
+    <string name="sign_up_6_title">Scan Kartu BPJS</string>
     <string name="address">Alamat rumah</string>
     <string name="personal_address">Alamat pribadi</string>
     <string name="rent">Sewa</string>
@@ -46,7 +47,7 @@
     <string name="score_credit_terms_title">Ketentuan Skor Kredit</string>
     <string name="skor_kredit_anda">Skor Kredit Anda</string>
     <string name="delay_loan_terms"><![CDATA[<p>Berdasarkan skor kredit Anda saat ini, Anda dapat mengajukan <b>pinjaman kebutuhan mendadak</b> dengan jumlah maksimum Rp5.000.000,00 dan proses hanya 1 menit.<p>Apakah Anda ingin segera mengajukan pinjaman kebutuhan mendadak??]]></string>
-    <string name="sign_up_6_title">Info Kontak</string>
+    <string name="sign_up_8_title">Info Kontak</string>
     <string name="log_in">Log in to your account</string>
     <string name="reason_for_loan">Alasan kebutuhan pinjaman</string>
     <string name="mock_max_loan_explanation"><![CDATA[Berdasarkan skor kredit Anda, maksimal pinjaman yang bisa Anda peroleh adalah <b>Rp3.000.000,00</b>.]]></string>

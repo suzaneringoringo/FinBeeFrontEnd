@@ -23,7 +23,7 @@ class RegisterScanPaycheck extends AppCompatActivity{
     }
 
     public void scanPaycheck(View view) {
-        Intent intent = new Intent(this, CreditScore.class);
+        Intent intent = new Intent(this, RegisterAdvancedInfo.class);
         startActivity(intent);
         finish();
     }

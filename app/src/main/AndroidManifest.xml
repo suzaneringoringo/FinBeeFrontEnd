@@ -21,6 +21,8 @@
         </activity>
         <activity android:name=".RegisterScanPhoto">
         </activity>
+        <activity android:name=".RegisterScanWorkPhoto">
+        </activity>
         <activity android:name=".RegisterScanCreditCard">
         </activity>
         <activity android:name=".RegisterScanBPJS">

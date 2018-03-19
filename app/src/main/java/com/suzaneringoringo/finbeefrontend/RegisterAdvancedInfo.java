@@ -17,13 +17,13 @@ class RegisterAdvancedInfo extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_advanced_info);
-        LinearLayout ll = (LinearLayout) findViewById(R.id.sign_up_6_linear_layout);
+        LinearLayout ll = (LinearLayout) findViewById(R.id.sign_up_8_linear_layout);
         ll.setBackgroundColor(Color.argb(0xff, 0xff, 0xff, 0xff));
         overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
     }
 
     public void saveAdvancedInfo(View view) {
-        Intent intent = new Intent(this, RegisterScanPaycheck.class);
+        Intent intent = new Intent(this, CreditScore.class);
         startActivity(intent);
         finish();
     }
