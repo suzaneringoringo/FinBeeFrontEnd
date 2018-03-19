@@ -16,7 +16,6 @@ class LoanReceived extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_loan_received);
-        getSupportActionBar().hide();
         LinearLayout ll = (LinearLayout) findViewById(R.id.loan_received_background);
         ll.setBackgroundColor(Color.argb(0xff, 0x0e, 0x89, 0xa8));
     }

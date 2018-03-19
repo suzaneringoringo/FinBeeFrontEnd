@@ -23,8 +23,6 @@ public class RegisterBasicInfo extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         super.setContentView(R.layout.activity_register_basic_info);
-        //initialsie the pager
-        getSupportActionBar().setTitle("Daftar");
     }
 
     public void confirmForm(View view) {

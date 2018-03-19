@@ -27,7 +27,6 @@ class DelayLoan extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_delay_loan);
-        getSupportActionBar().setTitle("Tunda Transfer");
         LinearLayout ll = (LinearLayout) findViewById(R.id.delay_loan_background);
         ll.setBackgroundColor(Color.argb(0xff, 0xff, 0xff, 0xff));
         TextView terms = (TextView) findViewById(R.id.delay_loan_terms);

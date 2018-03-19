@@ -21,7 +21,6 @@ class CreditScore extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_credit_score);
-        getSupportActionBar().setTitle("Skor Kredit");
         LinearLayout ll = (LinearLayout) findViewById(R.id.credit_score_background);
         ll.setBackgroundColor(Color.argb(0xff, 0xff, 0xff, 0xff));
         RunAnimationScore();

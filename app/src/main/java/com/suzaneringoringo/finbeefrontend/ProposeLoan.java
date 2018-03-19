@@ -26,7 +26,6 @@ class ProposeLoan extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_propose_loan);
-        getSupportActionBar().setTitle("Pinjaman Kebutuhan Mendadak");
         LinearLayout ll = (LinearLayout) findViewById(R.id.propose_loan_background);
         ll.setBackgroundColor(Color.argb(0xff, 0xff, 0xff, 0xff));
         TextView explanation = (TextView) findViewById(R.id.max_loan_explanation);

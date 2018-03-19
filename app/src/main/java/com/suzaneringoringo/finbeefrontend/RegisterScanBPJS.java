@@ -18,7 +18,6 @@ public class RegisterScanBPJS extends AppCompatActivity {
         setContentView(R.layout.activity_register_scan_bpjs);
         LinearLayout ll = (LinearLayout) findViewById(R.id.sign_up_5_linear_layout);
         ll.setBackgroundColor(Color.argb(0xff, 0xff, 0xff, 0xff));
-        this.getSupportActionBar().setTitle("Daftar");
         overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
     }
 

@@ -1,10 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/profile_background"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ToolBarTheme">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/forte"
+            android:text="@string/profil"
+            android:textColor="@color/white"
+            android:textSize="@dimen/toolbar_title_size"
+            android:textStyle="bold" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/toolbar_dropshadow" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -20,34 +47,34 @@
                 android:layout_width="@dimen/profile_picture_size"
                 android:layout_height="@dimen/profile_picture_size"
                 android:layout_gravity="center_horizontal"
-                android:src="@drawable/name"/>
+                android:src="@drawable/name" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/default_margin"
-                android:textAlignment="center"
                 android:text="Daniel Kurniawan"
+                android:textAlignment="center"
                 android:textColor="@color/colorPrimaryDark"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textAlignment="center"
-                android:text="081111111234"/>
+                android:text="081111111234"
+                android:textAlignment="center" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textAlignment="center"
-                android:text="danielK@email.com"/>
+                android:text="danielK@email.com"
+                android:textAlignment="center" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1px"
-                android:layout_marginTop="@dimen/half_default_margin"
                 android:layout_marginBottom="@dimen/half_default_margin"
+                android:layout_marginTop="@dimen/half_default_margin"
                 android:background="@color/dark_grey" />
 
             <TextView
@@ -60,8 +87,8 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1px"
-                android:layout_marginTop="@dimen/half_default_margin"
                 android:layout_marginBottom="@dimen/half_default_margin"
+                android:layout_marginTop="@dimen/half_default_margin"
                 android:background="@color/dark_grey" />
 
             <TextView
@@ -73,60 +100,61 @@
                 android:gravity="center"
                 android:text="Rp300.000,00"
                 android:textAlignment="center"
-                android:textColor="#1A237E"
+                android:textColor="@color/colorPrimaryDark"
                 android:textSize="24sp" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1px"
-                android:layout_marginTop="@dimen/half_default_margin"
                 android:layout_marginBottom="@dimen/half_default_margin"
+                android:layout_marginTop="@dimen/half_default_margin"
                 android:background="@color/dark_grey" />
 
             <LinearLayout
                 android:id="@+id/bottom_buttons"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal" >
+                android:orientation="horizontal">
 
                 <Button
                     android:layout_width="0px"
-                    android:layout_weight="1"
                     android:layout_height="match_parent"
                     android:layout_marginRight="8dp"
-                    android:background="@drawable/button_orange"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_primary"
                     android:padding="@dimen/default_margin"
                     android:text="Pembayaran"
+                    android:textColor="@color/white"
                     tools:ignore="Suspicious0dp" />
 
                 <Button
                     android:layout_width="0px"
-                    android:layout_weight="1"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_primary"
                     android:padding="@dimen/default_margin"
                     android:text="Transfer"
-                    android:background="@drawable/button_orange"
-                    tools:ignore="Suspicious0dp">
-                </Button>
+                    android:textColor="@color/white"
+                    tools:ignore="Suspicious0dp"></Button>
 
             </LinearLayout>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/default_margin"
                 android:layout_marginBottom="@dimen/half_default_margin"
-                android:text="Skor kredit Anda cukup untuk mengajukan Pinjaman Kebutuhan Mendadak maksimal Rp3.000.000,00."/>
+                android:layout_marginTop="@dimen/default_margin"
+                android:text="Skor kredit Anda cukup untuk mengajukan Pinjaman Kebutuhan Mendadak maksimal Rp3.000.000,00." />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/button_primary"
+                android:onClick="proposeLoan"
                 android:padding="@dimen/default_margin"
                 android:text="Ajukan Permohonan"
-                android:background="@drawable/button_orange"
-                android:onClick="proposeLoan">
-            </Button>
+                android:textColor="@color/white"></Button>
 
         </LinearLayout>
 

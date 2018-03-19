@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 /**
@@ -38,8 +39,8 @@ class Welcome3 extends Fragment {
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        LinearLayout ll = (LinearLayout) getView().findViewById(R.id.welcome_3_linear_layout);
-        ll.setBackgroundColor(Color.argb(0xff, 0xff, 0xe7, 0x7e));
+        RelativeLayout ll = (RelativeLayout) getView().findViewById(R.id.welcome_3_linear_layout);
+        ll.setBackgroundColor(Color.argb(0xff, 0xff, 0xff, 0xff));
     }
 
     @Override

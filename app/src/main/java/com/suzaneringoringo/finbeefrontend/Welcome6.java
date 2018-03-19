@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 /**
@@ -36,7 +37,7 @@ class Welcome6 extends Fragment {
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        LinearLayout rl = (LinearLayout) getView().findViewById(R.id.welcome_6_linear_layout);
+        RelativeLayout rl = (RelativeLayout) getView().findViewById(R.id.welcome_6_linear_layout);
         rl.setBackgroundColor(Color.argb(0xff, 0x4a, 0xa3, 0xcb));
     }
 

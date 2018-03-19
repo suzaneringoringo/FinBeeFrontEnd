@@ -16,7 +16,6 @@ class Profile extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
-        getSupportActionBar().setTitle("Profil");
         LinearLayout ll = (LinearLayout) findViewById(R.id.profile_background);
         ll.setBackgroundColor(Color.argb(0xff, 0xff, 0xff, 0xff));
     }

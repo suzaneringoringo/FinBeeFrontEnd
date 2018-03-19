@@ -17,7 +17,6 @@ class DepositInfo extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_deposit_info);
-        getSupportActionBar().setTitle("Pinjaman Mudah");
         RelativeLayout ll = (RelativeLayout) findViewById(R.id.credit_score_background);
         ll.setBackgroundColor(Color.argb(0xff, 0xff, 0xff, 0xff));
     }

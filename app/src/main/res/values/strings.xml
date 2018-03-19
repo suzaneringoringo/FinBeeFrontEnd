@@ -1,12 +1,12 @@
 <resources>
-    <string name="app_name">FinBeeFrontEnD</string>
+    <string name="app_name">pinBeeFrontEnD</string>
     <string name="welcome_1_message">Kami hadir untuk Anda memberikan pinjaman mudah tanpa bunga dalam waktu 7 hari dengan biaya bunga dan beban administrasi yang paling rendah.</string>
     <string name="welcome_2_message">Aplikasi paling inovatif di mana setiap pinjaman diberikan berdasarkan Skor Kredit yang hanya dilakukan sekali dan Anda dapat memperoleh pinjaman berkali-kali tanpa harus melalui proses administrasi kembali.</string>
     <string name="welcome_3_message"></string>
     <string name="welcome_4_message"></string>
     <string name="welcome_5_message">Proses aplikasi dan persetujuan hanya 5 menit dan Anda akan segera mendapatkan dana pinjaman yang diminta dan Skor Kredit Anda.</string>
     <string name="welcome_5_title"><b>Berapa Lama Proses Aplikasi dan Persetujuan Kredit?</b></string>
-    <string name="welcome_6_description"><b>Anda siap untuk mengajukan pinjaman kepada FinBee.</b></string>
+    <string name="welcome_6_description"><b>Anda siap untuk mengajukan pinjaman kepada pinBee.</b></string>
     <string name="start">Start</string>
     <string name="facebook_login">Login with Facebook</string>
     <string name="sign_up">Sign me up!</string>
@@ -51,4 +51,13 @@
     <string name="reason_for_loan">Alasan kebutuhan pinjaman</string>
     <string name="mock_max_loan_explanation"><![CDATA[Berdasarkan skor kredit Anda, maksimal pinjaman yang bisa Anda peroleh adalah <b>Rp3.000.000,00</b>.]]></string>
     <string name="loan_amount">Jumlah pinjaman</string>
+    <string name="pinBee">pinBee</string>
+    <string name="ajukan_pinjaman">Ajukan Pinjaman</string>
+    <string name="ringkasan">Ringkasan Pinjaman</string>
+    <string name="profil">Profil</string>
+    <string name="pinjaman_diterima">Pinjaman Diterima</string>
+    <string name="info_saldo">Info Saldo</string>
+    <string name="tunda_pinjaman">Menunda Pinjaman</string>
+    <string name="skor_kredit">Skor Kredit</string>
+    <string name="daftar">Daftar</string>
 </resources>

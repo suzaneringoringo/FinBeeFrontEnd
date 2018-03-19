@@ -16,7 +16,6 @@ class LoanSummary extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_loan_summary);
-        getSupportActionBar().setTitle("Ringkasan Pinjaman");
         LinearLayout ll = (LinearLayout) findViewById(R.id.loan_summary_background);
         ll.setBackgroundColor(Color.argb(0xff, 0xff, 0xff, 0xff));
     }

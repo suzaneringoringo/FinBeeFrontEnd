@@ -6,6 +6,32 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ToolBarTheme">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/daftar"
+            android:textColor="@color/white"
+            android:textSize="@dimen/toolbar_title_size"
+            android:fontFamily="@font/forte"
+            android:textStyle="bold" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/toolbar_dropshadow" />
+
     <LinearLayout
         android:id="@+id/sign_up_7_navigation"
         android:layout_width="match_parent"
@@ -120,6 +146,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/sign_up_7_navigation"
+        android:gravity="center_horizontal"
         android:text="@string/sign_up_7_title"
         android:textAlignment="center"
         android:textSize="@dimen/page_title"
@@ -153,10 +180,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/default_margin"
-                    android:text="Scan"
+                    android:background="@drawable/button_primary"
                     android:onClick="scanPaycheck"
-                    android:background="@drawable/button_orange" >
-                </Button>
+                    android:text="Scan"
+                    android:textColor="@color/white"></Button>
 
             </LinearLayout>
 
