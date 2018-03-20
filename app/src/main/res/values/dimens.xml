@@ -18,4 +18,5 @@
     <dimen name="button_corner_radius">240dp</dimen>
     <dimen name="toolbar_title_size">24sp</dimen>
     <dimen name="camera_button_size">76dp</dimen>
+    <dimen name="hint_text_size">15sp</dimen>
 </resources>

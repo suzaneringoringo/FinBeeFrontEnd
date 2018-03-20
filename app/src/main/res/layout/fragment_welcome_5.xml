@@ -9,6 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_margin="@dimen/default_margin"
         android:gravity="center_horizontal|center_vertical"
         android:orientation="vertical">
 
@@ -25,7 +26,7 @@
             android:layout_marginTop="16dp"
             android:gravity="center_horizontal"
             android:text="@string/welcome_5_title"
-            android:textSize="20sp" />
+            android:textSize="@dimen/page_title" />
 
         <TextView
             android:id="@+id/subscreen_description_5"
@@ -34,8 +35,7 @@
             android:layout_marginTop="@dimen/default_margin"
             android:gravity="center_horizontal"
             android:text="@string/welcome_5_message"
-            android:textColor="@color/black"
-            android:textSize="@dimen/default_welcome_font" />
+            android:textColor="@color/black" />
 
     </LinearLayout>
 

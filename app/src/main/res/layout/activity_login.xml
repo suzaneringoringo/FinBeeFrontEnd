@@ -24,6 +24,14 @@
                 android:scaleType="centerCrop"
                 android:src="@drawable/finbee" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/double_default_margin"
+                android:text="@string/pinBee"
+                android:fontFamily="@font/forte"
+                android:textSize="48sp"/>
+
             <Button
                 android:id="@+id/facebook_login"
                 android:layout_width="match_parent"

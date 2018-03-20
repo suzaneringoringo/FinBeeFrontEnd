@@ -36,7 +36,8 @@
         android:id="@+id/sign_up_8_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/default_margin"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginBottom="@dimen/default_margin"
         android:gravity="center_horizontal"
         android:orientation="horizontal">
 
@@ -171,7 +172,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/sign_up_8_title"
-        android:layout_margin="@dimen/default_margin"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginBottom="@dimen/default_margin"
         android:gravity="center_vertical">
 
         <ScrollView
@@ -185,262 +187,313 @@
                 android:gravity="center_vertical"
                 android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/half_default_margin"
-                    android:layout_marginTop="@dimen/half_default_margin"
-                    android:background="@drawable/rectangle_primary"
-                    android:gravity="center_horizontal"
-                    android:paddingBottom="@dimen/half_default_margin"
-                    android:paddingLeft="@dimen/default_margin"
-                    android:paddingRight="@dimen/default_margin"
-                    android:paddingTop="@dimen/half_default_margin"
-                    android:text="@string/personal_address"
-                    android:textColor="@color/white"
-                    android:textSize="@dimen/form_section_title_size"
-                    android:textStyle="bold" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/dark_grey"
+                    android:layout_marginBottom="@dimen/default_margin"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="vertical"
+                    android:layout_marginRight="@dimen/double_default_margin"
+                    android:layout_marginLeft="@dimen/double_default_margin">
 
-                    <ImageView
-                        android:layout_width="@dimen/form_icon_width"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/home" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/half_default_margin"
+                        android:layout_gravity="center_horizontal"
+                        android:paddingLeft="@dimen/default_margin"
+                        android:paddingRight="@dimen/default_margin"
+                        android:paddingTop="@dimen/half_default_margin"
+                        android:text="@string/personal_address"
+                        android:textSize="@dimen/form_section_title_size"
+                        android:textStyle="bold" />
 
-                    <EditText
-                        android:id="@+id/personal_address_input"
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginStart="8dp"
-                        android:hint="@string/address"
-                        android:inputType="textMultiLine" />
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/form_icon_width"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/home" />
+
+                        <EditText
+                            android:id="@+id/personal_address_input"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginStart="8dp"
+                            android:hint="@string/address"
+                            android:inputType="textMultiLine"
+                            android:textSize="@dimen/hint_text_size" />
+
+                    </LinearLayout>
+
+                    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/rent" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/own" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/relatives" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/half_default_margin"
+                        android:text="@string/stay_duration"
+                        android:textSize="@dimen/form_column_info_font" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/hint_text_size" />
 
                 </LinearLayout>
 
-                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/rent" />
-
-                    <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/own" />
-
-                    <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/relatives" />
-                </RadioGroup>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/half_default_margin"
-                    android:text="@string/stay_duration"
-                    android:textSize="@dimen/form_column_info_font" />
-
-                <EditText
+                <View
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/half_default_margin"
-                    android:layout_marginTop="@dimen/half_default_margin"
-                    android:background="@drawable/rectangle_primary"
-                    android:gravity="center_horizontal"
-                    android:paddingBottom="@dimen/half_default_margin"
-                    android:paddingLeft="@dimen/default_margin"
-                    android:paddingRight="@dimen/default_margin"
-                    android:paddingTop="@dimen/half_default_margin"
-                    android:text="@string/work_address"
-                    android:textColor="@color/white"
-                    android:textSize="@dimen/form_section_title_size"
-                    android:textStyle="bold" />
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/double_default_margin"
+                    android:layout_marginBottom="@dimen/default_margin"
+                    android:background="@color/dark_grey"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="vertical"
+                    android:layout_marginRight="@dimen/double_default_margin"
+                    android:layout_marginLeft="@dimen/double_default_margin">
 
-                    <ImageView
-                        android:layout_width="@dimen/form_icon_width"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/work" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/half_default_margin"
+                        android:layout_marginTop="@dimen/half_default_margin"
+                        android:layout_gravity="center_horizontal"
+                        android:paddingLeft="@dimen/default_margin"
+                        android:paddingRight="@dimen/default_margin"
+                        android:paddingTop="@dimen/half_default_margin"
+                        android:text="@string/work_address"
+                        android:textSize="@dimen/form_section_title_size"
+                        android:textStyle="bold" />
 
-                    <EditText
-                        android:id="@+id/work_name_input"
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginStart="8dp"
-                        android:hint="@string/company_name"
-                        android:inputType="textPersonName" />
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/form_icon_width"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/work" />
+
+                        <EditText
+                            android:id="@+id/work_name_input"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginStart="8dp"
+                            android:hint="@string/company_name"
+                            android:inputType="textPersonName"
+                            android:textSize="@dimen/hint_text_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/form_icon_width"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/company" />
+
+                        <EditText
+                            android:id="@+id/work_address_input"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginStart="8dp"
+                            android:hint="@string/work_address"
+                            android:inputType="textMultiLine"
+                            android:textSize="@dimen/hint_text_size" />
+
+                    </LinearLayout>
+
+                    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/permanent" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/contract" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/half_default_margin"
+                        android:text="@string/work_duration"
+                        android:textSize="@dimen/form_column_info_font" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/hint_text_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/half_default_margin"
+                        android:text="@string/total_work_duration"
+                        android:textSize="@dimen/form_column_info_font" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/hint_text_size" />
 
                 </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/double_default_margin"
+                    android:layout_marginBottom="@dimen/default_margin"
+                    android:background="@color/dark_grey"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="vertical"
+                    android:layout_marginRight="@dimen/double_default_margin"
+                    android:layout_marginLeft="@dimen/double_default_margin">
 
-                    <ImageView
-                        android:layout_width="@dimen/form_icon_width"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/company" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/half_default_margin"
+                        android:layout_marginTop="@dimen/half_default_margin"
+                        android:layout_gravity="center_horizontal"
+                        android:paddingLeft="@dimen/default_margin"
+                        android:paddingRight="@dimen/default_margin"
+                        android:paddingTop="@dimen/half_default_margin"
+                        android:text="@string/economic_info"
+                        android:textSize="@dimen/form_section_title_size"
+                        android:textStyle="bold" />
 
-                    <EditText
-                        android:id="@+id/work_address_input"
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginStart="8dp"
-                        android:hint="@string/work_address"
-                        android:inputType="textMultiLine" />
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/form_icon_width"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/salary" />
+
+                        <EditText
+                            android:id="@+id/salary_input"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginStart="8dp"
+                            android:hint="@string/current_wage"
+                            android:inputType="number"
+                            android:textSize="@dimen/hint_text_size" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/default_margin"
+                        android:text="@string/current_edu"
+                        android:textSize="@dimen/form_column_info_font" />
+
+                    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/middle_school" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/high_school" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/university" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/others" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/default_margin"
+                        android:text="@string/marital_status" />
+
+                    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/married" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/single" />
+                    </RadioGroup>
 
                 </LinearLayout>
 
-                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/permanent" />
-
-                    <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/contract" />
-                </RadioGroup>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/half_default_margin"
-                    android:text="@string/work_duration"
-                    android:textSize="@dimen/form_column_info_font" />
-
-                <EditText
+                <View
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/half_default_margin"
-                    android:text="@string/total_work_duration"
-                    android:textSize="@dimen/form_column_info_font" />
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/half_default_margin"
-                    android:layout_marginTop="@dimen/half_default_margin"
-                    android:background="@drawable/rectangle_primary"
-                    android:gravity="center_horizontal"
-                    android:paddingBottom="@dimen/half_default_margin"
-                    android:paddingLeft="@dimen/default_margin"
-                    android:paddingRight="@dimen/default_margin"
-                    android:paddingTop="@dimen/half_default_margin"
-                    android:text="@string/economic_info"
-                    android:textColor="@color/white"
-                    android:textSize="@dimen/form_section_title_size"
-                    android:textStyle="bold" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="@dimen/form_icon_width"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/salary" />
-
-                    <EditText
-                        android:id="@+id/work_address_input"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginStart="8dp"
-                        android:hint="@string/current_wage"
-                        android:inputType="number" />
-
-                </LinearLayout>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/default_margin"
-                    android:text="@string/current_edu"
-                    android:textSize="@dimen/form_column_info_font" />
-
-                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/middle_school" />
-
-                    <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/high_school" />
-
-                    <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/university" />
-
-                    <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/others" />
-                </RadioGroup>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/default_margin"
-                    android:text="@string/marital_status" />
-
-                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/married" />
-
-                    <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/single" />
-                </RadioGroup>
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/double_default_margin"
+                    android:layout_marginBottom="@dimen/default_margin"
+                    android:background="@color/dark_grey"/>
 
                 <Button
                     android:id="@+id/next_button"
@@ -450,7 +503,7 @@
                     android:background="@drawable/button_primary"
                     android:onClick="saveAdvancedInfo"
                     android:text="Selesai"
-                    android:textColor="@color/white"></Button>
+                    android:textColor="@color/white"/>
 
             </LinearLayout>
 

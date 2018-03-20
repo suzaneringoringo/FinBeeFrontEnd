@@ -25,9 +25,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/default_margin"
             android:gravity="center_horizontal"
-            android:text="@string/welcome_3_message"
-            android:textColor="@color/black"
-            android:textSize="@dimen/default_welcome_font" />
+            android:text="@string/welcome_3_message" />
 
     </LinearLayout>
 
