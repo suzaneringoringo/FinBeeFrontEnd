@@ -11,7 +11,7 @@ import android.widget.TextView;
  * Created by root on 01/03/18.
  */
 
-class LoanReceived extends AppCompatActivity {
+public class LoanReceived extends AppCompatActivity {
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

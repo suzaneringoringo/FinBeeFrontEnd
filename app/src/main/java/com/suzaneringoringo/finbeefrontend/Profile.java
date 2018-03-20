@@ -11,7 +11,7 @@ import android.widget.LinearLayout;
  * Created by root on 01/03/18.
  */
 
-class Profile extends AppCompatActivity {
+public class Profile extends AppCompatActivity {
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

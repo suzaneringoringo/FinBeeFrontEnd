@@ -11,7 +11,7 @@ import android.widget.RelativeLayout;
  * Created by root on 01/03/18.
  */
 
-class DepositInfo extends AppCompatActivity {
+public class DepositInfo extends AppCompatActivity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

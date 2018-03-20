@@ -12,7 +12,7 @@ import android.widget.RelativeLayout;
  * Created by root on 25/02/18.
  */
 
-class RegisterScanKTP extends AppCompatActivity {
+public class RegisterScanKTP extends AppCompatActivity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

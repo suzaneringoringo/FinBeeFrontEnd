@@ -12,7 +12,7 @@ import android.widget.RelativeLayout;
  * Created by root on 27/02/18.
  */
 
-class RegisterScanWorkPhoto extends AppCompatActivity {
+public class RegisterScanWorkPhoto extends AppCompatActivity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

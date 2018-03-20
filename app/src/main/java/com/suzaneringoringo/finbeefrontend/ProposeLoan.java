@@ -19,7 +19,7 @@ import android.widget.TextView;
  * Created by root on 01/03/18.
  */
 
-class ProposeLoan extends AppCompatActivity {
+public class ProposeLoan extends AppCompatActivity {
 
     private Context mContext = this;
 

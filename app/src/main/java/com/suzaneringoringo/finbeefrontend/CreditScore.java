@@ -15,7 +15,7 @@ import android.widget.TextView;
  * Created by root on 01/03/18.
  */
 
-class CreditScore extends AppCompatActivity {
+public class CreditScore extends AppCompatActivity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

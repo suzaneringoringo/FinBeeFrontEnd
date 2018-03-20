@@ -10,7 +10,7 @@ import android.widget.LinearLayout;
  * Created by root on 01/03/18.
  */
 
-class Login extends AppCompatActivity {
+public class Login extends AppCompatActivity {
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

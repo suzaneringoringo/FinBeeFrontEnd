@@ -16,7 +16,7 @@ import android.widget.TextView;
  * Created by root on 25/02/18.
  */
 
-class Welcome5 extends Fragment {
+public class Welcome5 extends Fragment {
 
     public static Welcome5 newInstance() {
         Welcome5 fragment = new Welcome5();

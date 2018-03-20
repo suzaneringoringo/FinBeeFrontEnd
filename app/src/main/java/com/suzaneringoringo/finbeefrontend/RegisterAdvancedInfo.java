@@ -11,7 +11,7 @@ import android.widget.LinearLayout;
  * Created by root on 27/02/18.
  */
 
-class RegisterAdvancedInfo extends AppCompatActivity {
+public class RegisterAdvancedInfo extends AppCompatActivity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

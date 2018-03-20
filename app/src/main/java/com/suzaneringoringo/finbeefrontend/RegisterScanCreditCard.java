@@ -12,7 +12,7 @@ import android.widget.RelativeLayout;
  * Created by root on 27/02/18.
  */
 
-class RegisterScanCreditCard extends AppCompatActivity {
+public class RegisterScanCreditCard extends AppCompatActivity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

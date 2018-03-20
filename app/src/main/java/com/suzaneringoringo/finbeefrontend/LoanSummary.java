@@ -11,7 +11,7 @@ import android.widget.LinearLayout;
  * Created by root on 01/03/18.
  */
 
-class LoanSummary extends AppCompatActivity {
+public class LoanSummary extends AppCompatActivity {
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -19,7 +19,7 @@ import android.widget.TextView;
  * Created by root on 01/03/18.
  */
 
-class DelayLoan extends AppCompatActivity {
+public class DelayLoan extends AppCompatActivity {
 
     private Context mContext = this;
 
