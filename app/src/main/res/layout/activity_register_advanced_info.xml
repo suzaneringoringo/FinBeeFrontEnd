@@ -129,7 +129,7 @@
             android:layout_width="@dimen/default_margin"
             android:layout_height="@dimen/line_height"
             android:layout_gravity="center_vertical"
-            android:background="@color/dark_grey" />
+            android:background="@color/colorPrimary" />
 
         <TextView
             android:layout_width="@dimen/nav_circle_size"
