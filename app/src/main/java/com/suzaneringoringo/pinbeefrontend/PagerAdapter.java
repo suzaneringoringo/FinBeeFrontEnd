@@ -1,4 +1,4 @@
-package com.suzaneringoringo.finbeefrontend;
+package com.suzaneringoringo.pinbeefrontend;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;

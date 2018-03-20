@@ -1,4 +1,4 @@
-package com.suzaneringoringo.finbeefrontend;
+package com.suzaneringoringo.pinbeefrontend;
 
 import android.content.Intent;
 import android.graphics.Color;

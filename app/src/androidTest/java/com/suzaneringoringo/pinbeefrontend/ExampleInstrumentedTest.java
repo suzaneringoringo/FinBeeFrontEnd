@@ -1,4 +1,4 @@
-package com.suzaneringoringo.finbeefrontend;
+package com.suzaneringoringo.pinbeefrontend;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

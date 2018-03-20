@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.suzaneringoringo.finbeefrontend">
+    package="com.suzaneringoringo.pinbeefrontend">
 
     <application
         android:allowBackup="true"
@@ -9,43 +9,43 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".WelcomeActivity">
+        <activity android:name="com.suzaneringoringo.pinbeefrontend.WelcomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RegisterBasicInfo">
+        <activity android:name="com.suzaneringoringo.pinbeefrontend.RegisterBasicInfo">
         </activity>
-        <activity android:name=".RegisterScanKTP">
+        <activity android:name="com.suzaneringoringo.pinbeefrontend.RegisterScanKTP">
         </activity>
-        <activity android:name=".RegisterScanPhoto">
+        <activity android:name="com.suzaneringoringo.pinbeefrontend.RegisterScanPhoto">
         </activity>
-        <activity android:name=".RegisterScanWorkPhoto">
+        <activity android:name="com.suzaneringoringo.pinbeefrontend.RegisterScanWorkPhoto">
         </activity>
-        <activity android:name=".RegisterScanCreditCard">
+        <activity android:name="com.suzaneringoringo.pinbeefrontend.RegisterScanCreditCard">
         </activity>
-        <activity android:name=".RegisterScanBPJS">
+        <activity android:name="com.suzaneringoringo.pinbeefrontend.RegisterScanBPJS">
         </activity>
-        <activity android:name=".RegisterAdvancedInfo">
+        <activity android:name="com.suzaneringoringo.pinbeefrontend.RegisterAdvancedInfo">
         </activity>
-        <activity android:name=".RegisterScanPaycheck">
+        <activity android:name="com.suzaneringoringo.pinbeefrontend.RegisterScanPaycheck">
         </activity>
-        <activity android:name=".CreditScore">
+        <activity android:name="com.suzaneringoringo.pinbeefrontend.CreditScore">
         </activity>
-        <activity android:name=".DepositInfo">
+        <activity android:name="com.suzaneringoringo.pinbeefrontend.DepositInfo">
         </activity>
-        <activity android:name=".DelayLoan">
+        <activity android:name="com.suzaneringoringo.pinbeefrontend.DelayLoan">
         </activity>
-        <activity android:name=".Login">
+        <activity android:name="com.suzaneringoringo.pinbeefrontend.Login">
         </activity>
-        <activity android:name=".LoanSummary">
+        <activity android:name="com.suzaneringoringo.pinbeefrontend.LoanSummary">
         </activity>
-        <activity android:name=".Profile">
+        <activity android:name="com.suzaneringoringo.pinbeefrontend.Profile">
         </activity>
-        <activity android:name=".ProposeLoan">
+        <activity android:name="com.suzaneringoringo.pinbeefrontend.ProposeLoan">
         </activity>
-        <activity android:name=".LoanReceived">
+        <activity android:name="com.suzaneringoringo.pinbeefrontend.LoanReceived">
         </activity>
     </application>
 

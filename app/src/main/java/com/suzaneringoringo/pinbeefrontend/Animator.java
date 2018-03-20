@@ -1,4 +1,4 @@
-package com.suzaneringoringo.finbeefrontend;
+package com.suzaneringoringo.pinbeefrontend;
 
 import android.view.View;
 import android.view.animation.Animation;

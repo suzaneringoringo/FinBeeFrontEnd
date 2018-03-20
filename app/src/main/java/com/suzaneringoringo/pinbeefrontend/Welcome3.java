@@ -1,4 +1,4 @@
-package com.suzaneringoringo.finbeefrontend;
+package com.suzaneringoringo.pinbeefrontend;
 
 import android.graphics.Color;
 import android.support.v4.app.Fragment;
@@ -16,10 +16,10 @@ import android.widget.TextView;
  * Created by root on 25/02/18.
  */
 
-public class Welcome2 extends Fragment {
+public class Welcome3 extends Fragment {
 
-    public static Welcome2 newInstance() {
-        Welcome2 fragment = new Welcome2();
+    public static Welcome3 newInstance() {
+        Welcome3 fragment = new Welcome3();
         return fragment;
     }
 
@@ -30,17 +30,17 @@ public class Welcome2 extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_welcome_2, container, false);
-        TextView subscreen_description = (TextView) view.findViewById(R.id.subscreen_description_2);
-        subscreen_description.setText(Html.fromHtml(subscreen_description.getText().toString()));
+        View view = inflater.inflate(R.layout.fragment_welcome_3, container, false);
+        TextView subscreen_description = (TextView) view.findViewById(R.id.subscreen_description_3);
+        subscreen_description.setText(Html.fromHtml("<p>Skor Anda dapat berubah naik dan turun.<p>Semakin banyak informasi yang anda berikan maka semakin tinggi Skor Kredit.<p>Pembayaran pinjaman tepat waktu akan menaikkan Skor Kredit dan akan menurun atas setiap keterlambatan pembayaran."));
         return view;
     }
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        RelativeLayout ll = (RelativeLayout) getView().findViewById(R.id.welcome_2_linear_layout);
-        ll.setBackgroundColor(Color.argb(0xff, 0xda, 0x55, 0x44));
+        RelativeLayout ll = (RelativeLayout) getView().findViewById(R.id.welcome_3_linear_layout);
+        ll.setBackgroundColor(Color.argb(0xff, 0xff, 0xff, 0xff));
     }
 
     @Override

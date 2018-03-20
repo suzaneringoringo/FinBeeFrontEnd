@@ -1,11 +1,9 @@
-package com.suzaneringoringo.finbeefrontend;
+package com.suzaneringoringo.pinbeefrontend;
 
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.text.Html;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 
 /**
  * Created by root on 01/03/18.

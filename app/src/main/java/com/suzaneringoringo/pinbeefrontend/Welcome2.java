@@ -1,4 +1,4 @@
-package com.suzaneringoringo.finbeefrontend;
+package com.suzaneringoringo.pinbeefrontend;
 
 import android.graphics.Color;
 import android.support.v4.app.Fragment;
@@ -8,7 +8,6 @@ import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -16,10 +15,10 @@ import android.widget.TextView;
  * Created by root on 25/02/18.
  */
 
-public class Welcome5 extends Fragment {
+public class Welcome2 extends Fragment {
 
-    public static Welcome5 newInstance() {
-        Welcome5 fragment = new Welcome5();
+    public static Welcome2 newInstance() {
+        Welcome2 fragment = new Welcome2();
         return fragment;
     }
 
@@ -30,8 +29,8 @@ public class Welcome5 extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_welcome_5, container, false);
-        TextView subscreen_description = (TextView) view.findViewById(R.id.subscreen_description_5);
+        View view = inflater.inflate(R.layout.fragment_welcome_2, container, false);
+        TextView subscreen_description = (TextView) view.findViewById(R.id.subscreen_description_2);
         subscreen_description.setText(Html.fromHtml(subscreen_description.getText().toString()));
         return view;
     }
@@ -39,8 +38,8 @@ public class Welcome5 extends Fragment {
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        RelativeLayout ll = (RelativeLayout) getView().findViewById(R.id.welcome_5_linear_layout);
-        ll.setBackgroundColor(Color.argb(0xff, 0xaa, 0xc9, 0xb9));
+        RelativeLayout ll = (RelativeLayout) getView().findViewById(R.id.welcome_2_linear_layout);
+        ll.setBackgroundColor(Color.argb(0xff, 0xda, 0x55, 0x44));
     }
 
     @Override

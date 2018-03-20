@@ -7,10 +7,7 @@
     <string name="welcome_5_message">Proses aplikasi dan persetujuan hanya 5 menit dan Anda akan segera mendapatkan dana pinjaman yang diminta dan Skor Kredit Anda.</string>
     <string name="welcome_5_title"><b>Berapa Lama Proses Aplikasi dan Persetujuan Kredit?</b></string>
     <string name="welcome_6_description"><b>Anda siap untuk mengajukan pinjaman kepada pinBee.</b></string>
-    <string name="start">Start</string>
-    <string name="facebook_login">Login with Facebook</string>
-    <string name="sign_up">Sign me up!</string>
-    <string name="sign_up_1_navigation"><![CDATA[<b>Info Kontak</b> >> Scan KTP >> Scan Foto >> Scan Kartu Kredit >> Scan Kartu BPJS >> Info Lanjutan >>]]></string>
+    <string name="facebook_login">Masuk dengan Facebook</string>
     <string name="name">Nama</string>
     <string name="phone_number">Nomor Telepon</string>
     <string name="sign_up_1_title">Info Pribadi</string>
@@ -48,7 +45,7 @@
     <string name="skor_kredit_anda">Skor Kredit Anda</string>
     <string name="delay_loan_terms"><![CDATA[<p>Berdasarkan skor kredit Anda saat ini, Anda dapat mengajukan <b>pinjaman kebutuhan mendadak</b> dengan jumlah maksimum Rp5.000.000,00 dan proses hanya 1 menit.<p>Apakah Anda ingin segera mengajukan pinjaman kebutuhan mendadak??]]></string>
     <string name="sign_up_8_title">Info Kontak</string>
-    <string name="log_in">Log in to your account</string>
+    <string name="log_in">Masuk ke akun anda</string>
     <string name="reason_for_loan">Alasan kebutuhan pinjaman</string>
     <string name="mock_max_loan_explanation"><![CDATA[Berdasarkan skor kredit Anda, maksimal pinjaman yang bisa Anda peroleh adalah <b>Rp3.000.000,00</b>.]]></string>
     <string name="loan_amount">Jumlah pinjaman</string>
