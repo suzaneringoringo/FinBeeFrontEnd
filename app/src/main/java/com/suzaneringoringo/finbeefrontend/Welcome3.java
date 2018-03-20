@@ -1,4 +1,4 @@
-package com.suzaneringoringo.finbeefrontend;
+package com.suzaneringoringo.pinBeefrontend;
 
 import android.graphics.Color;
 import android.support.v4.app.Fragment;
