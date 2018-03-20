@@ -40,27 +40,45 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/default_margin"
-                android:orientation="horizontal">
+                android:layout_marginTop="@dimen/default_margin"
+                android:layout_marginLeft="@dimen/default_margin"
+                android:layout_marginRight="@dimen/default_margin"
+                android:layout_marginBottom="@dimen/half_default_margin"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
 
                 <ImageView
-                    android:layout_width="@dimen/form_icon_width"
-                    android:layout_height="match_parent"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="@drawable/profile_image_border"
                     android:onClick="openProfile"
+                    android:scaleType="centerInside"
                     android:src="@drawable/name" />
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
                     android:layout_marginStart="8dp"
+                    android:layout_gravity="center_vertical"
                     android:text="Davin Kurniawan"
                     android:textColor="@color/colorPrimaryDark"
-                    android:textSize="@dimen/page_title" />
+                    android:textSize="20sp" />
 
             </LinearLayout>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="@dimen/default_margin"
+                android:layout_gravity="center_horizontal"
+                android:text="Ketuk foto unuk membuka profil"
+                android:textSize="12dp"/>
+
             <TableLayout
+                android:layout_marginTop="@dimen/default_margin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 

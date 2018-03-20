@@ -195,7 +195,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_margin="@dimen/default_margin"
-        android:background="@drawable/rounded_button_primary"
+        android:background="@drawable/circle_button_primary"
         android:onClick="scanPhoto" />
 
     </RelativeLayout>

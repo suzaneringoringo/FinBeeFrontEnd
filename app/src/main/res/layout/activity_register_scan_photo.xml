@@ -177,11 +177,20 @@
         android:text="@string/sign_up_3_subtitle"
         android:textAlignment="center" />
 
+    <TextView
+        android:id="@+id/sign_up_3_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sign_up_3_subtitle"
+        android:text="Wajah Anda belum terdeteksi. Silakan coba lagi."
+        android:textColor="@color/red"
+        android:textAlignment="center" />
+
     <LinearLayout
         android:id="@+id/main_content"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/sign_up_3_subtitle"
+        android:layout_below="@id/sign_up_3_info"
         android:layout_marginBottom="@dimen/double_default_margin"
         android:layout_marginLeft="@dimen/default_margin"
         android:layout_marginRight="@dimen/default_margin"

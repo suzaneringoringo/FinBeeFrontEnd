@@ -12,10 +12,6 @@
         <activity android:name=".WelcomeActivity">
         </activity>
         <activity android:name=".RegisterBasicInfo">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".RegisterScanKTP">
         </activity>
@@ -40,6 +36,10 @@
         <activity android:name=".Login">
         </activity>
         <activity android:name=".LoanSummary">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".Profile">
         </activity>
