@@ -32,7 +32,7 @@ public class Welcome3 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_welcome_3, container, false);
         TextView subscreen_description = (TextView) view.findViewById(R.id.subscreen_description_3);
-        subscreen_description.setText(Html.fromHtml("<p>Skor Anda dapat berubah naik dan turun.<p>Semakin banyak informasi yang anda berikan maka semakin tinggi Skor Kredit.<p>Pembayaran pinjaman tepat waktu akan menaikkan Skor Kredit dan akan menurun atas setiap keterlambatan pembayaran."));
+        subscreen_description.setText(Html.fromHtml("<p>Your score can go up and down.<p>The more information you give, the higher your credit score will be.<p>On-time loan payment will improve your credit score, but delay will decrease it."));
         return view;
     }
 

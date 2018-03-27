@@ -25,7 +25,7 @@ public class CreditScore extends AppCompatActivity {
         ll.setBackgroundColor(Color.argb(0xff, 0xff, 0xff, 0xff));
         RunAnimationScore();
         TextView terms = (TextView) findViewById(R.id.score_credit_terms);
-        terms.setText(Html.fromHtml("<p>Skor Anda dapat naik dan turun.<p>Setiap pelunasan pinjaman akan menaikkan skore kredit Anda sebesar 0,5 poin.<p>Besarnya skor kredit akan menentukan besarnya pinjaman yang bisa Anda peroleh dan jenis pinjaman."));
+        terms.setText(Html.fromHtml("<p>Your score can go up and down.<p>Every loan payment will increase your score by 0.5.<p>Your credit score will determine loan types that you can propose."));
     }
 
     private void RunAnimationScore()

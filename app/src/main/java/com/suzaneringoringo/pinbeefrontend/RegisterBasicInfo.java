@@ -34,10 +34,10 @@ public class RegisterBasicInfo extends AppCompatActivity {
         }
         EditText name_input = (EditText) findViewById(R.id.name_input);
         EditText phone_number_input = (EditText) findViewById(R.id.phone_number_input);
-        builder.setTitle("Info Kontak")
+        builder.setTitle("Contact Info")
                 .setMessage(
-                        ("Nama: " + name_input.getText().toString() + "\n" +
-                                "Nomor telepon: " + phone_number_input.getText().toString())
+                        ("Name: " + name_input.getText().toString() + "\n" +
+                                "Phone number: " + phone_number_input.getText().toString())
                 )
                 .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {

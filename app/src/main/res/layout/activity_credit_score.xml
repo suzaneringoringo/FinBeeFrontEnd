@@ -90,8 +90,8 @@
                 android:layout_marginTop="@dimen/default_margin"
                 android:background="@drawable/button_primary"
                 android:onClick="scoreOK"
-                android:text="Selanjutnya"
-                android:textColor="@color/white"></Button>
+                android:text="@string/next"
+                android:textColor="@color/white"/>
 
         </LinearLayout>
 

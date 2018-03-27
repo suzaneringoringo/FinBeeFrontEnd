@@ -41,12 +41,12 @@ public class DelayLoan extends AppCompatActivity {
         }
         EditText name_input = (EditText) findViewById(R.id.name_input);
         EditText phone_number_input = (EditText) findViewById(R.id.phone_number_input);
-        builder.setTitle("Anda belum membutuhkan Pinjaman Kebutuhan Mendadak")
+        builder.setTitle("You have not needed sudden loan yet.")
                 .setMessage(
-                        ("Berdasarkan skor kredit Anda saat ini, Anda belum dapat mengajukan pinjaman modal kerja. " +
-                                "Anda memerlukan minimum 9 untuk dapat mengajukan pinjaman modal kerja.")
+                        ("According to your credit score, you are not yet able to propose for working capital loan. " +
+                                "You will need a credit score of 9 able to propose for working capital loan.")
                 )
-                .setPositiveButton("Keluar", new DialogInterface.OnClickListener() {
+                .setPositiveButton("Exit", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.cancel();
                         Intent intent = new Intent(mContext, Login.class);
@@ -54,7 +54,7 @@ public class DelayLoan extends AppCompatActivity {
                         finish();
                     }
                 })
-                .setNegativeButton("Kembali", new DialogInterface.OnClickListener() {
+                .setNegativeButton("Back", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
                         Intent intent = new Intent(mContext, CreditScore.class);
                         startActivity(intent);

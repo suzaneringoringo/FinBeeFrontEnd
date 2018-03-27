@@ -36,8 +36,8 @@
         android:id="@+id/sign_up_8_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/default_margin"
         android:layout_marginBottom="@dimen/default_margin"
+        android:layout_marginTop="@dimen/default_margin"
         android:gravity="center_horizontal"
         android:orientation="horizontal">
 
@@ -172,8 +172,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/sign_up_8_title"
-        android:layout_marginTop="@dimen/default_margin"
         android:layout_marginBottom="@dimen/default_margin"
+        android:layout_marginTop="@dimen/default_margin"
         android:gravity="center_vertical">
 
         <ScrollView
@@ -190,21 +190,21 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="@color/dark_grey"
-                    android:layout_marginBottom="@dimen/default_margin"/>
+                    android:layout_marginBottom="@dimen/default_margin"
+                    android:background="@color/dark_grey" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/double_default_margin"
                     android:layout_marginRight="@dimen/double_default_margin"
-                    android:layout_marginLeft="@dimen/double_default_margin">
+                    android:orientation="vertical">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/half_default_margin"
                         android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="@dimen/half_default_margin"
                         android:paddingLeft="@dimen/default_margin"
                         android:paddingRight="@dimen/default_margin"
                         android:paddingTop="@dimen/half_default_margin"
@@ -272,23 +272,23 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:layout_marginTop="@dimen/double_default_margin"
                     android:layout_marginBottom="@dimen/default_margin"
-                    android:background="@color/dark_grey"/>
+                    android:layout_marginTop="@dimen/double_default_margin"
+                    android:background="@color/dark_grey" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/double_default_margin"
                     android:layout_marginRight="@dimen/double_default_margin"
-                    android:layout_marginLeft="@dimen/double_default_margin">
+                    android:orientation="vertical">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
                         android:layout_marginBottom="@dimen/half_default_margin"
                         android:layout_marginTop="@dimen/half_default_margin"
-                        android:layout_gravity="center_horizontal"
                         android:paddingLeft="@dimen/default_margin"
                         android:paddingRight="@dimen/default_margin"
                         android:paddingTop="@dimen/half_default_margin"
@@ -385,23 +385,23 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:layout_marginTop="@dimen/double_default_margin"
                     android:layout_marginBottom="@dimen/default_margin"
-                    android:background="@color/dark_grey"/>
+                    android:layout_marginTop="@dimen/double_default_margin"
+                    android:background="@color/dark_grey" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/double_default_margin"
                     android:layout_marginRight="@dimen/double_default_margin"
-                    android:layout_marginLeft="@dimen/double_default_margin">
+                    android:orientation="vertical">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
                         android:layout_marginBottom="@dimen/half_default_margin"
                         android:layout_marginTop="@dimen/half_default_margin"
-                        android:layout_gravity="center_horizontal"
                         android:paddingLeft="@dimen/default_margin"
                         android:paddingRight="@dimen/default_margin"
                         android:paddingTop="@dimen/half_default_margin"
@@ -491,19 +491,21 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:layout_marginTop="@dimen/double_default_margin"
                     android:layout_marginBottom="@dimen/default_margin"
-                    android:background="@color/dark_grey"/>
+                    android:layout_marginTop="@dimen/double_default_margin"
+                    android:background="@color/dark_grey" />
 
                 <Button
                     android:id="@+id/next_button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/default_margin"
+                    android:layout_marginRight="@dimen/default_margin"
                     android:layout_marginTop="@dimen/default_margin"
                     android:background="@drawable/button_primary"
                     android:onClick="saveAdvancedInfo"
                     android:text="Selesai"
-                    android:textColor="@color/white"/>
+                    android:textColor="@color/white" />
 
             </LinearLayout>
 

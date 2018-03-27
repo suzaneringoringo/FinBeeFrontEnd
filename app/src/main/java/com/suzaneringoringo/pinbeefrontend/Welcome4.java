@@ -32,7 +32,7 @@ public class Welcome4 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_welcome_4, container, false);
         TextView subscreen_description = (TextView) view.findViewById(R.id.subscreen_description_4);
-        subscreen_description.setText(Html.fromHtml("<p>Hanya pinBee yang bisa memberikan <b>pinjaman mudah</b> maksimum Rp 1 juta tanpa bunga selama 7 hari.<p>Anda juga dapat memperoleh kebutuhan <b>Pinjaman Kebutuhan Mendadak</b> dengan bunga dan biaya adniminstrasi yang paling rendah.<p>Anda juga dapat memperoleh <b>Pinjaman Modal Kerja</b> denagan bunga yang paling rendah."));
+        subscreen_description.setText(Html.fromHtml("<p>Only pinBee can provide <b>easy loan</b> with the maximum of Rp 1 million without interest within 7 days.<p>You can also receive <b>Sudden Loan</b> with lowest interest and administration fee.<p>You can also receive <b>Working Capital Loan</b> with lowest interest."));
         return view;
     }
 

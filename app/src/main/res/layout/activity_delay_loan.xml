@@ -36,7 +36,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/default_margin"
-        android:text="Anda menunda pinjaman mudah dan akan menggunakannya kemudian."
+        android:text="You delay your easy loan and will use it later."
         android:textAlignment="center"
         android:textSize="@dimen/page_title"
         android:textStyle="bold" />
@@ -66,9 +66,9 @@
             android:layout_marginRight="8dp"
             android:background="@drawable/button_red"
             android:padding="@dimen/default_margin"
-            android:text="Tidak"
+            android:text="No"
             android:onClick="suddenLoan"
-            tools:ignore="Suspicious0dp"></Button>
+            tools:ignore="Suspicious0dp"/>
 
         <Button
             android:id="@+id/yes_button"
@@ -77,7 +77,7 @@
             android:layout_height="match_parent"
             android:layout_marginLeft="8dp"
             android:padding="@dimen/default_margin"
-            android:text="Ya"
+            android:text="Yes"
             android:onClick="proposeLoan"
             android:background="@drawable/button_green"
             tools:ignore="Suspicious0dp">

@@ -41,10 +41,10 @@ public class ProposeLoan extends AppCompatActivity {
         }
         EditText reason_input = (EditText) findViewById(R.id.reason_for_loan);
         EditText amount_input = (EditText) findViewById(R.id.amount);
-        builder.setTitle("Info Peminjaman")
+        builder.setTitle("Loan Info")
                 .setMessage(
-                        ("Alasan peminjaman: " + reason_input.getText().toString() + "\n" +
-                                "Nomor telepon: " + amount_input.getText().toString())
+                        ("Reason for loan: " + reason_input.getText().toString() + "\n" +
+                                "Amount: " + amount_input.getText().toString())
                 )
                 .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {

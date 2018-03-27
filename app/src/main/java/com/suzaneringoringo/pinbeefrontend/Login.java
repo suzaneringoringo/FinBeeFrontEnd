@@ -1,8 +1,10 @@
 package com.suzaneringoringo.pinbeefrontend;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.view.Window;
 import android.widget.LinearLayout;
 
@@ -20,4 +22,9 @@ public class Login extends AppCompatActivity {
         ll.setBackgroundColor(Color.argb(0xff, 0xff, 0xff, 0xff));
     }
 
+    public void Login(View view) {
+        Intent intent = new Intent(this, Profile.class);
+        startActivity(intent);
+        finish();
+    }
 }

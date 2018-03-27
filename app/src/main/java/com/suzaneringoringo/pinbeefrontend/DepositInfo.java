@@ -5,6 +5,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
 /**
@@ -17,7 +18,7 @@ public class DepositInfo extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_deposit_info);
-        RelativeLayout ll = (RelativeLayout) findViewById(R.id.credit_score_background);
+        LinearLayout ll = (LinearLayout) findViewById(R.id.credit_score_background);
         ll.setBackgroundColor(Color.argb(0xff, 0xff, 0xff, 0xff));
     }
 

@@ -46,6 +46,7 @@
                 android:id="@+id/max_loan_explanation"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textAlignment="center"
                 android:text="@string/mock_max_loan_explanation" />
 
             <LinearLayout
@@ -99,8 +100,8 @@
                 android:background="@drawable/button_primary"
                 android:onClick="confirmForm"
                 android:padding="@dimen/default_margin"
-                android:text="Konfirmasi"
-                android:textColor="@color/white"></Button>
+                android:text="@string/confirm"
+                android:textColor="@color/white"/>
 
         </LinearLayout>
 

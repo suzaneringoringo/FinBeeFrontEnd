@@ -74,7 +74,7 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginBottom="@dimen/default_margin"
                 android:layout_gravity="center_horizontal"
-                android:text="Ketuk foto unuk membuka profil"
+                android:text="@string/profile_hint"
                 android:textSize="12dp"/>
 
             <TableLayout
@@ -95,7 +95,7 @@
                         android:gravity="end"
                         android:paddingEnd="@dimen/half_default_margin"
                         android:paddingRight="@dimen/half_default_margin"
-                        android:text="Total pinjaman"
+                        android:text="Total loan"
                         android:textAlignment="viewEnd"
                         android:textStyle="bold" />
 
@@ -132,7 +132,7 @@
                         android:gravity="end"
                         android:paddingEnd="@dimen/half_default_margin"
                         android:paddingRight="@dimen/half_default_margin"
-                        android:text="Pinjaman yang digunakan"
+                        android:text="Used loan"
                         android:textAlignment="viewEnd"
                         android:textStyle="bold" />
 
@@ -169,7 +169,7 @@
                         android:gravity="end"
                         android:paddingEnd="@dimen/half_default_margin"
                         android:paddingRight="@dimen/half_default_margin"
-                        android:text="Account FinBee"
+                        android:text="pinBee account"
                         android:textAlignment="viewEnd"
                         android:textStyle="bold" />
 
@@ -199,7 +199,7 @@
                         android:gravity="end"
                         android:paddingEnd="@dimen/half_default_margin"
                         android:paddingRight="@dimen/half_default_margin"
-                        android:text="Pembelian melalui FinBee"
+                        android:text="Purchase with pinBee"
                         android:textAlignment="viewEnd"
                         android:textStyle="bold" />
 
@@ -229,7 +229,7 @@
                         android:gravity="end"
                         android:paddingEnd="@dimen/half_default_margin"
                         android:paddingRight="@dimen/half_default_margin"
-                        android:text="Waktu jatuh tempo"
+                        android:text="Deadline"
                         android:textAlignment="viewEnd"
                         android:textStyle="bold" />
 
@@ -266,7 +266,7 @@
                         android:gravity="end"
                         android:paddingEnd="@dimen/half_default_margin"
                         android:paddingRight="@dimen/half_default_margin"
-                        android:text="Transfer ke rekening"
+                        android:text="Transfer to account"
                         android:textAlignment="viewEnd"
                         android:textStyle="bold" />
 
@@ -296,7 +296,7 @@
                         android:gravity="end"
                         android:paddingEnd="@dimen/half_default_margin"
                         android:paddingRight="@dimen/half_default_margin"
-                        android:text="Waktu jatuh tempo"
+                        android:text="Deadline"
                         android:textAlignment="viewEnd"
                         android:textStyle="bold" />
 
@@ -308,7 +308,7 @@
                         android:gravity="start"
                         android:paddingLeft="@dimen/half_default_margin"
                         android:paddingStart="@dimen/half_default_margin"
-                        android:text="12 April 2018"
+                        android:text="April 12 2018"
                         android:textAlignment="viewStart" />
 
                 </TableRow>
@@ -333,7 +333,7 @@
                         android:gravity="end"
                         android:paddingEnd="@dimen/half_default_margin"
                         android:paddingRight="@dimen/half_default_margin"
-                        android:text="Biaya administrasi yang belum dibayar"
+                        android:text="Unpaid administration fee"
                         android:textAlignment="viewEnd"
                         android:textStyle="bold" />
 
@@ -345,7 +345,7 @@
                         android:gravity="start"
                         android:paddingLeft="@dimen/half_default_margin"
                         android:paddingStart="@dimen/half_default_margin"
-                        android:text="Rp10.000,00 (1 bulan)"
+                        android:text="Rp10.000,00 (1 month)"
                         android:textAlignment="viewStart" />
 
                 </TableRow>

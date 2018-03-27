@@ -175,16 +175,19 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/sign_up_3_title"
         android:text="@string/sign_up_3_subtitle"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/default_welcome_font" />
 
     <TextView
         android:id="@+id/sign_up_3_info"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/sign_up_3_subtitle"
-        android:text="Wajah Anda belum terdeteksi. Silakan coba lagi."
+        android:text="No face detected. Please try again."
+        android:textAlignment="center"
         android:textColor="@color/red"
-        android:textAlignment="center" />
+        android:textSize="@dimen/form_column_info_font" />
 
     <LinearLayout
         android:id="@+id/main_content"
@@ -212,6 +215,6 @@
         android:layout_centerHorizontal="true"
         android:layout_margin="@dimen/default_margin"
         android:background="@drawable/button_primary"
-        android:onClick="scanPhoto"></Button>
+        android:onClick="scanPhoto"/>
 
 </RelativeLayout>
