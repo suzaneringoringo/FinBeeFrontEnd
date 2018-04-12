@@ -29,9 +29,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/default_margin"
-        android:layout_marginTop="@dimen/default_margin">
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -41,10 +39,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/default_margin"
-                android:layout_marginLeft="@dimen/default_margin"
-                android:layout_marginRight="@dimen/default_margin"
-                android:layout_marginTop="@dimen/default_margin"
+                android:background="@color/light_grey"
                 android:gravity="center_horizontal"
                 android:orientation="vertical">
 
@@ -54,6 +49,7 @@
                     android:layout_height="80dp"
                     android:layout_marginEnd="@dimen/half_default_margin"
                     android:layout_marginRight="@dimen/half_default_margin"
+                    android:layout_marginTop="@dimen/default_margin"
                     android:onClick="openProfile"
                     android:scaleType="fitCenter"
                     android:src="@drawable/profile_sender" />
@@ -68,7 +64,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/default_margin"
+                    android:layout_marginBottom="@dimen/double_default_margin"
                     android:text="Last login: 28/09/2017 10:33 AM"
                     android:textSize="12sp" />
 
@@ -96,6 +92,7 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/cash_advance_available"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -176,26 +173,26 @@
 
                 <ImageView
                     android:layout_width="0dp"
-                    android:layout_height="60dp"
+                    android:layout_height="@dimen/icon_size"
                     android:layout_weight="1"
                     android:src="@drawable/pinbee_pay" />
 
                 <ImageView
                     android:layout_width="0dp"
-                    android:layout_height="60dp"
+                    android:layout_height="@dimen/icon_size"
                     android:layout_weight="1"
                     android:src="@drawable/transfer" />
 
                 <ImageView
                     android:layout_width="0dp"
-                    android:layout_height="60dp"
+                    android:layout_height="@dimen/icon_size"
                     android:layout_weight="1"
-                    android:src="@drawable/shop"
-                    android:onClick="Shop" />
+                    android:onClick="Shop"
+                    android:src="@drawable/shop" />
 
                 <ImageView
                     android:layout_width="0dp"
-                    android:layout_height="60dp"
+                    android:layout_height="@dimen/icon_size"
                     android:layout_weight="1"
                     android:src="@drawable/apply_loan" />
 
@@ -248,12 +245,12 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Rp0,00 (0% interest)"/>
+                        android:text="Rp0,00 (0% interest)" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Rp0,00 (admin fee)"/>
+                        android:text="Rp0,00 (admin fee)" />
 
                 </LinearLayout>
 

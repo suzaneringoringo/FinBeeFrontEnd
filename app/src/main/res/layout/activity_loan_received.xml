@@ -91,6 +91,13 @@
                 android:text="You need to improve your credit score to 9 to receive working capital loan."
                 android:textColor="@color/white"/>
 
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/go_to_home"
+                android:background="@drawable/button_primary"
+                android:onClick="GoHome"/>
+
         </LinearLayout>
 
     </ScrollView>

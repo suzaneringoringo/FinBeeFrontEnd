@@ -75,4 +75,9 @@
     <string name="shop">Shop</string>
     <string name="credit_score">Credit Score</string>
     <string name="credit_score_instruction">You are eligible for a loan with max limit of Rp5.000.000,00. Click Appy Loan button.</string>
+    <string name="funds_transfer">Funds Transfer</string>
+    <string name="sender">Sender</string>
+    <string name="money_limit">Money Limit</string>
+    <string name="amount">Amount</string>
+    <string name="go_to_home">Go to Home</string>
 </resources>

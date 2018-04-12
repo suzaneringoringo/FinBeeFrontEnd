@@ -48,7 +48,8 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/shop1" />
+            android:src="@drawable/shop1"
+            android:onClick="TransferFunds"/>
 
         <ImageView
             android:layout_width="match_parent"

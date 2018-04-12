@@ -49,6 +49,10 @@
         </activity>
         <activity android:name="com.suzaneringoringo.pinbeefrontend.LoanReceived">
         </activity>
+        <activity android:name="com.suzaneringoringo.pinbeefrontend.Shop">
+        </activity>
+        <activity android:name="com.suzaneringoringo.pinbeefrontend.FundsTransfer">
+        </activity>
     </application>
 
 </manifest>
