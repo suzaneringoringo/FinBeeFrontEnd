@@ -30,7 +30,8 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/default_margin">
+        android:layout_marginBottom="@dimen/default_margin"
+        android:layout_marginTop="@dimen/default_margin">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -40,317 +41,223 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/default_margin"
+                android:layout_marginBottom="@dimen/default_margin"
                 android:layout_marginLeft="@dimen/default_margin"
                 android:layout_marginRight="@dimen/default_margin"
-                android:layout_marginBottom="@dimen/half_default_margin"
-                android:orientation="horizontal"
-                android:gravity="center_horizontal">
+                android:layout_marginTop="@dimen/default_margin"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
-                    android:background="@drawable/profile_image_border"
+                    android:id="@+id/profile_picture"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginEnd="@dimen/half_default_margin"
+                    android:layout_marginRight="@dimen/half_default_margin"
                     android:onClick="openProfile"
-                    android:scaleType="centerInside"
-                    android:src="@drawable/name" />
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/profile_sender" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_gravity="center_vertical"
-                    android:text="Davin Kurniawan"
-                    android:textColor="@color/colorPrimaryDark"
-                    android:textSize="20sp" />
+                    android:text="Hello, Edmund Situmorang!"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/default_margin"
+                    android:text="Last login: 28/09/2017 10:33 AM"
+                    android:textSize="12sp" />
 
             </LinearLayout>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="8dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginBottom="@dimen/default_margin"
-                android:layout_gravity="center_horizontal"
-                android:text="@string/profile_hint"
-                android:textSize="12dp"/>
-
-            <TableLayout
-                android:layout_marginTop="@dimen/default_margin"
+            <View
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="1px"
+                android:layout_marginBottom="@dimen/double_default_margin"
+                android:background="@color/dark_grey" />
 
-                <TableRow
-                    android:layout_width="fill_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/double_default_margin"
+                android:layout_marginLeft="@dimen/default_margin"
+                android:layout_marginRight="@dimen/default_margin"
+                android:orientation="vertical">
 
-                    <TextView
-                        android:layout_width="0px"
-                        android:layout_height="match_parent"
-                        android:layout_column="0"
-                        android:layout_weight="1"
-                        android:gravity="end"
-                        android:paddingEnd="@dimen/half_default_margin"
-                        android:paddingRight="@dimen/half_default_margin"
-                        android:text="Total loan"
-                        android:textAlignment="viewEnd"
-                        android:textStyle="bold" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cash_advance_available_in_pinbee_pay"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
 
-                    <TextView
-                        android:layout_width="0px"
-                        android:layout_height="match_parent"
-                        android:layout_column="1"
-                        android:layout_weight="1"
-                        android:gravity="start"
-                        android:paddingLeft="@dimen/half_default_margin"
-                        android:paddingStart="@dimen/half_default_margin"
-                        android:text="Rp800.000,00"
-                        android:textAlignment="viewStart" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/default_margin"
+                    android:layout_marginTop="@dimen/default_margin"
+                    android:gravity="center"
+                    android:text="Rp800.000,00"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="24sp" />
 
-                </TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Click Transfer to deposit money to your bank account of choice or Shop from our partners."
+                    android:textAlignment="center" />
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1px"
-                    android:layout_marginBottom="@dimen/half_default_margin"
-                    android:layout_marginTop="@dimen/half_default_margin"
+                    android:layout_marginBottom="@dimen/default_margin"
+                    android:layout_marginTop="@dimen/default_margin"
                     android:background="@color/dark_grey" />
 
-                <TableRow
-                    android:layout_width="fill_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1">
-
-                    <TextView
-                        android:layout_width="0px"
-                        android:layout_height="match_parent"
-                        android:layout_column="0"
-                        android:layout_weight="1"
-                        android:gravity="end"
-                        android:paddingEnd="@dimen/half_default_margin"
-                        android:paddingRight="@dimen/half_default_margin"
-                        android:text="Used loan"
-                        android:textAlignment="viewEnd"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="0px"
-                        android:layout_height="match_parent"
-                        android:layout_column="1"
-                        android:layout_weight="1"
-                        android:gravity="start"
-                        android:paddingLeft="@dimen/half_default_margin"
-                        android:paddingStart="@dimen/half_default_margin"
-                        android:text="Rp500.000,00"
-                        android:textAlignment="viewStart" />
-
-                </TableRow>
-
-                <View
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="1px"
-                    android:layout_marginBottom="@dimen/half_default_margin"
-                    android:layout_marginTop="@dimen/half_default_margin"
-                    android:background="@color/dark_grey" />
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
-                <TableRow
-                    android:layout_width="fill_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="7,37"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="32sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/credit_score"
+                            android:textAlignment="center"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
 
                     <TextView
-                        android:layout_width="0px"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_column="0"
-                        android:layout_weight="1"
-                        android:gravity="end"
-                        android:paddingEnd="@dimen/half_default_margin"
-                        android:paddingRight="@dimen/half_default_margin"
-                        android:text="pinBee account"
-                        android:textAlignment="viewEnd"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:text="@string/credit_score_instruction" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="@dimen/double_default_margin"
+                android:background="@color/dark_grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/double_default_margin"
+                android:layout_marginLeft="@dimen/default_margin"
+                android:layout_marginRight="@dimen/default_margin"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/pinbee_pay" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/transfer" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/shop"
+                    android:onClick="Shop" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/apply_loan" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="@dimen/double_default_margin"
+                android:background="@color/dark_grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/double_default_margin"
+                android:layout_marginLeft="@dimen/default_margin"
+                android:layout_marginRight="@dimen/default_margin"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/half_default_margin"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/half_default_margin"
+                        android:src="@drawable/calendar_red" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/half_default_margin"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Payment Due (7 days)"
+                        android:textColor="@color/colorPrimary"
                         android:textStyle="bold" />
 
                     <TextView
-                        android:layout_width="0px"
-                        android:layout_height="match_parent"
-                        android:layout_column="1"
-                        android:layout_weight="1"
-                        android:gravity="start"
-                        android:paddingLeft="@dimen/half_default_margin"
-                        android:paddingStart="@dimen/half_default_margin"
-                        android:text="Rp300.000,00"
-                        android:textAlignment="viewStart" />
-
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="fill_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1">
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp0,00 (0% interest)"/>
 
                     <TextView
-                        android:layout_width="0px"
-                        android:layout_height="match_parent"
-                        android:layout_column="0"
-                        android:layout_weight="1"
-                        android:gravity="end"
-                        android:paddingEnd="@dimen/half_default_margin"
-                        android:paddingRight="@dimen/half_default_margin"
-                        android:text="Purchase with pinBee"
-                        android:textAlignment="viewEnd"
-                        android:textStyle="bold" />
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp0,00 (admin fee)"/>
 
-                    <TextView
-                        android:layout_width="0px"
-                        android:layout_height="match_parent"
-                        android:layout_column="1"
-                        android:layout_weight="1"
-                        android:gravity="start"
-                        android:paddingLeft="@dimen/half_default_margin"
-                        android:paddingStart="@dimen/half_default_margin"
-                        android:text="Rp0,00"
-                        android:textAlignment="viewStart" />
+                </LinearLayout>
 
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="fill_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1">
-
-                    <TextView
-                        android:layout_width="0px"
-                        android:layout_height="match_parent"
-                        android:layout_column="0"
-                        android:layout_weight="1"
-                        android:gravity="end"
-                        android:paddingEnd="@dimen/half_default_margin"
-                        android:paddingRight="@dimen/half_default_margin"
-                        android:text="Deadline"
-                        android:textAlignment="viewEnd"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="0px"
-                        android:layout_height="match_parent"
-                        android:layout_column="1"
-                        android:layout_weight="1"
-                        android:gravity="start"
-                        android:paddingLeft="@dimen/half_default_margin"
-                        android:paddingStart="@dimen/half_default_margin"
-                        android:text="-"
-                        android:textAlignment="viewStart" />
-
-                </TableRow>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1px"
-                    android:layout_marginBottom="@dimen/half_default_margin"
-                    android:layout_marginTop="@dimen/half_default_margin"
-                    android:background="@color/dark_grey" />
-
-                <TableRow
-                    android:layout_width="fill_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1">
-
-                    <TextView
-                        android:layout_width="0px"
-                        android:layout_height="match_parent"
-                        android:layout_column="0"
-                        android:layout_weight="1"
-                        android:gravity="end"
-                        android:paddingEnd="@dimen/half_default_margin"
-                        android:paddingRight="@dimen/half_default_margin"
-                        android:text="Transfer to account"
-                        android:textAlignment="viewEnd"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="0px"
-                        android:layout_height="match_parent"
-                        android:layout_column="1"
-                        android:layout_weight="1"
-                        android:gravity="start"
-                        android:paddingLeft="@dimen/half_default_margin"
-                        android:paddingStart="@dimen/half_default_margin"
-                        android:text="Rp500.000,00"
-                        android:textAlignment="viewStart" />
-
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="fill_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1">
-
-                    <TextView
-                        android:layout_width="0px"
-                        android:layout_height="match_parent"
-                        android:layout_column="0"
-                        android:layout_weight="1"
-                        android:gravity="end"
-                        android:paddingEnd="@dimen/half_default_margin"
-                        android:paddingRight="@dimen/half_default_margin"
-                        android:text="Deadline"
-                        android:textAlignment="viewEnd"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="0px"
-                        android:layout_height="match_parent"
-                        android:layout_column="1"
-                        android:layout_weight="1"
-                        android:gravity="start"
-                        android:paddingLeft="@dimen/half_default_margin"
-                        android:paddingStart="@dimen/half_default_margin"
-                        android:text="April 12 2018"
-                        android:textAlignment="viewStart" />
-
-                </TableRow>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1px"
-                    android:layout_marginBottom="@dimen/half_default_margin"
-                    android:layout_marginTop="@dimen/half_default_margin"
-                    android:background="@color/dark_grey" />
-
-                <TableRow
-                    android:layout_width="fill_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1">
-
-                    <TextView
-                        android:layout_width="0px"
-                        android:layout_height="match_parent"
-                        android:layout_column="0"
-                        android:layout_weight="1"
-                        android:gravity="end"
-                        android:paddingEnd="@dimen/half_default_margin"
-                        android:paddingRight="@dimen/half_default_margin"
-                        android:text="Unpaid administration fee"
-                        android:textAlignment="viewEnd"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="0px"
-                        android:layout_height="match_parent"
-                        android:layout_column="1"
-                        android:layout_weight="1"
-                        android:gravity="start"
-                        android:paddingLeft="@dimen/half_default_margin"
-                        android:paddingStart="@dimen/half_default_margin"
-                        android:text="Rp10.000,00 (1 month)"
-                        android:textAlignment="viewStart" />
-
-                </TableRow>
-
-            </TableLayout>
+            </LinearLayout>
 
         </LinearLayout>
 

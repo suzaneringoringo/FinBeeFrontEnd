@@ -25,4 +25,10 @@ public class LoanSummary extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
+
+    public void Shop(View view) {
+        Intent intent = new Intent(this, Shop.class);
+        startActivity(intent);
+        finish();
+    }
 }

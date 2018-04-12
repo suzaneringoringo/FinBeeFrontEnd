@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">pinBeeFrontEnD</string>
-    <string name="welcome_1_message">We are here to give easy loan with no interest in 7 days, with lowest administration fee.</string>
+    <string name="welcome_1_message">We are here to give cash advanced with no interest in 7 days, with lowest administration fee.</string>
     <string name="welcome_2_message">The most innovative apllication where loan is given based on a credit score. Loan can be processed without repetitious administration.</string>
     <string name="welcome_3_message"></string>
     <string name="welcome_4_message"></string>
@@ -40,10 +40,10 @@
     <string name="marital_status">Marital Status</string>
     <string name="married">Married</string>
     <string name="single">Single</string>
-    <string name="sign_up_7_title">Scan Your Salary Check</string>
+    <string name="sign_up_7_title">Scan Your Paycheck</string>
     <string name="score_credit_terms_title">Score Credit Terms</string>
     <string name="skor_kredit_anda">Your Credit Score</string>
-    <string name="delay_loan_terms"><![CDATA[<p>According to your credit score, you may propose <b>sudden loan</b> with the maximum of Rp5.000.000,00 in a 1-minute process.<p> Do you want to propose for sudden loan?]]></string>
+    <string name="delay_loan_terms"><![CDATA[<p>According to your credit score, you may propose <b>emergency loan</b> with the maximum of Rp5.000.000,00 in a 1-minute process.<p> Do you want to propose for emergency loan?]]></string>
     <string name="sign_up_8_title">Contact Info</string>
     <string name="log_in">Login</string>
     <string name="reason_for_loan">Reason for loan</string>
@@ -51,7 +51,7 @@
     <string name="loan_amount">Loan amount</string>
     <string name="pinBee">pinBee</string>
     <string name="ajukan_pinjaman">Propose for a loan</string>
-    <string name="ringkasan">Loan Summary</string>
+    <string name="ringkasan">Cash Advance Summary</string>
     <string name="profil">Profile</string>
     <string name="pinjaman_diterima">Loan Approved</string>
     <string name="info_saldo">Balance Info</string>
@@ -60,7 +60,6 @@
     <string name="daftar">Register</string>
     <string name="sign_up_3_subtitle">Face the camera.</string>
     <string name="apply_for_loan">Apply for loan</string>
-    <string name="transfer">Transfer</string>
     <string name="payment">Payment</string>
     <string name="top_up_pinbee_pay">Top up pinBee pay</string>
     <string name="improve_credit_score">Improve credit score</string>
@@ -70,4 +69,10 @@
     <string name="transfer_to_my_bank_account">Transfer to my bank account</string>
     <string name="profile_hint">Click photo to open profile</string>
     <string name="confirm">Confirm</string>
+    <string name="cash_advance_available_in_pinbee_pay">Cash Advance available in pinBee pay</string>
+    <string name="pinbee_pay">pinBee pay</string>
+    <string name="transfer">Transfer</string>
+    <string name="shop">Shop</string>
+    <string name="credit_score">Credit Score</string>
+    <string name="credit_score_instruction">You are eligible for a loan with max limit of Rp5.000.000,00. Click Appy Loan button.</string>
 </resources>

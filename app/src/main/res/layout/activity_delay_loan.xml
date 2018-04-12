@@ -36,7 +36,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/default_margin"
-        android:text="You delay your easy loan and will use it later."
+        android:text="You delay your cash advance and will use it later."
         android:textAlignment="center"
         android:textSize="@dimen/page_title"
         android:textStyle="bold" />
