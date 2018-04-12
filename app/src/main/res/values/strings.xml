@@ -80,4 +80,13 @@
     <string name="money_limit">Money Limit</string>
     <string name="amount">Amount</string>
     <string name="go_to_home">Go to Home</string>
+    <string name="home">Home</string>
+    <string name="info">Info</string>
+    <string name="payment_due">Payment Due</string>
+    <string name="pay">Pay</string>
+    <string name="unused_credit">Unused Credit</string>
+    <string name="summary">Summary</string>
+    <string name="apply_loan">Apply Loan</string>
+    <string name="top_up">Top Up</string>
+    <string name="transactions">Transactions</string>
 </resources>

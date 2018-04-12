@@ -5,7 +5,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 /**
@@ -17,14 +17,18 @@ public class LoanSummary extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_loan_summary);
-        LinearLayout ll = (LinearLayout) findViewById(R.id.loan_summary_background);
-        ll.setBackgroundColor(Color.argb(0xff, 0xff, 0xff, 0xff));
 
         Intent intent = getIntent();
-        TextView cashAdvanceAvailable = (TextView) findViewById(R.id.cash_advance_available);
-        String nilai = intent.getStringExtra("UANG_SEKARANG");
+        String nilai = intent.getStringExtra("CURRENT_BALANCE");
         if (nilai != null) {
+            TextView cashAdvanceAvailable = (TextView) findViewById(R.id.cash_advance_available);
             cashAdvanceAvailable.setText(nilai);
+            TextView paymentDue = (TextView) findViewById(R.id.payment_due);
+            String paymentDueValue = intent.getStringExtra("PAYMENT_DUE");
+            paymentDue.setText(paymentDueValue);
+            TextView adminFee = (TextView) findViewById(R.id.admin_fee);
+            String adminFeeValue = intent.getStringExtra("ADMIN_FEE");
+            adminFee.setText(adminFeeValue);
         }
     }
 
@@ -36,6 +40,12 @@ public class LoanSummary extends AppCompatActivity {
 
     public void Shop(View view) {
         Intent intent = new Intent(this, Shop.class);
+        startActivity(intent);
+        finish();
+    }
+
+    public void GoHome(View view) {
+        Intent intent = new Intent(this, Home.class);
         startActivity(intent);
         finish();
     }

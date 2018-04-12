@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/credit_score_background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -94,28 +93,31 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/button_orange"
+                    android:background="@drawable/button_primary"
+                    android:onClick="transfer"
+                    android:padding="@dimen/default_margin"
+                    android:text="Transfer to bank account"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin"
+                    android:background="@drawable/button_primary"
                     android:onClick="delayLoan"
                     android:padding="@dimen/default_margin"
-                    android:text="confirmed" />
+                    android:text="Stay in pinBee account"
+                    android:textColor="@color/white" />
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/default_margin"
-                    android:background="@drawable/button_orange"
+                    android:background="@drawable/button_primary"
                     android:onClick="transfer"
                     android:padding="@dimen/default_margin"
-                    android:text="delayed" />
-
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/default_margin"
-                    android:background="@drawable/button_orange"
-                    android:onClick="transfer"
-                    android:padding="@dimen/default_margin"
-                    android:text="@string/improve_credit_score" />
+                    android:text="@string/improve_credit_score"
+                    android:textColor="@color/white" />
 
             </LinearLayout>
 

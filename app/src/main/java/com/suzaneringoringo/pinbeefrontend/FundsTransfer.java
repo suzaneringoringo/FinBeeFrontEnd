@@ -17,7 +17,9 @@ public class FundsTransfer extends AppCompatActivity {
 
     public void Transfer(View view) {
         Intent intent = new Intent(this, LoanSummary.class);
-        intent.putExtra("UANG_SEKARANG", "Rp112.337,50");
+        intent.putExtra("CURRENT_BALANCE", "Rp112.337,50");
+        intent.putExtra("PAYMENT_DUE", "Rp687.662,50 (0% interest)");
+        intent.putExtra("ADMIN_FEE", "Rp10.000,00 (admin fee)");
         startActivity(intent);
         finish();
     }

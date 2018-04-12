@@ -53,6 +53,8 @@
         </activity>
         <activity android:name="com.suzaneringoringo.pinbeefrontend.FundsTransfer">
         </activity>
+        <activity android:name="com.suzaneringoringo.pinbeefrontend.Home">
+        </activity>
     </application>
 
 </manifest>

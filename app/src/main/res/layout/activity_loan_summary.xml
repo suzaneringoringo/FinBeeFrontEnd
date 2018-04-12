@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/loan_summary_background"
     android:layout_width="match_parent"
@@ -28,7 +28,17 @@
 
     </android.support.v7.widget.Toolbar>
 
+    <View
+        android:id="@+id/shadow"
+        android:layout_width="match_parent"
+        android:layout_below="@id/toolbar_top"
+        android:layout_height="5dp"
+        android:background="@drawable/toolbar_dropshadow" />
+
     <ScrollView
+        android:id="@+id/main_content"
+        android:layout_below="@id/shadow"
+        android:layout_above="@id/navbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -201,6 +211,7 @@
                 android:layout_marginBottom="@dimen/double_default_margin"
                 android:layout_marginLeft="@dimen/default_margin"
                 android:layout_marginRight="@dimen/default_margin"
+                android:paddingBottom="@dimen/default_margin"
                 android:background="@drawable/rectangle_light_grey"
                 android:orientation="horizontal"
                 android:padding="@dimen/default_margin">
@@ -236,11 +247,13 @@
                         android:textStyle="bold" />
 
                     <TextView
+                        android:id="@+id/payment_due"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Rp0,00 (0% interest)" />
 
                     <TextView
+                        android:id="@+id/admin_fee"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Rp0,00 (admin fee)" />
@@ -253,4 +266,103 @@
 
     </ScrollView>
 
-</LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_above="@id/navbar"
+        android:background="@drawable/navbar_dropshadow" />
+
+    <LinearLayout
+        android:id="@+id/navbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/half_default_margin"
+        android:background="@color/light_grey"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:onClick="GoHome"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:src="@drawable/navbar_home"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="@string/home"
+                android:textSize="8sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:src="@drawable/navbar_wallet"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="@string/pinbee_pay"
+                android:textSize="8sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:onClick="Shop"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:src="@drawable/navbar_shop"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="@string/shop"
+                android:textSize="8sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:src="@drawable/navbar_info"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="@string/info"
+                android:textSize="8sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
